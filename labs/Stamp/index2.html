@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div class="gandhi">
+			<div class="gandhi-body">
+				<canvas id="myCanvas" width="120" height="110" style="border:none;">
+				Your browser does not support the HTML5 canvas tag.</canvas>
+				<script>
+				var c=document.getElementById("myCanvas");
+				var ctx=c.getContext("2d");
+				ctx.beginPath();
+				ctx.moveTo(00,00);
+				ctx.bezierCurveTo(100,100,100,100,120,110);
+				ctx.strokeStyle="#222";
+				ctx.lineWidth=2;
+				ctx.stroke();
+				</script> 
+			</div>
+			<div class="gandhi-head"></div>
+			<div class="gandhi-ear"></div>
+			<div class="gandhi-earblock"></div>
+			<div class="gandhi-frame"></div>
+			<div class="gandhi-glass"></div>
+		</div>
+	</body>
+</html>

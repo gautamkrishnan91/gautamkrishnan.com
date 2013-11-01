@@ -1,0 +1,123 @@
+body{
+ 	background: #EEE;
+ 	margin: 0;
+}
+#outer-wrapper{
+	width: 1178px;
+	margin: 0 auto;
+}
+#inner-wrapper{
+	position: absolute;
+	top: 50%;
+	height: 398px;
+	width: 1178px;
+	margin: 0 auto;
+	margin-top: -199px;	
+}
+#myCanvas{
+	position: absolute;
+	z-index: 1;
+}
+.leftbottom-square{
+	width: 170px;
+	height: 200px;
+	float: left;
+	position: absolute;
+	background: #EEE;
+	margin: 199px 0 0 0;
+	z-index: 2;
+}
+.rightbottom-square{
+	width: 170px;
+	height: 200px;
+	float: left;
+	position: absolute;
+	background: #EEE;
+	margin: 200px 0 0 1010px;
+	z-index: 2;	
+}
+.topleft-triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 170px 200px 0px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	border-color: transparent transparent #EEE transparent;
+}
+.topright-triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 0px 200px 170px;
+	margin: 0 0 0 1008px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	border-color: transparent transparent #EEE transparent;
+}
+.bottomleft-triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 428px 200px 0px;
+	margin: 200px 0 0 170px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	border-color: transparent transparent #EEE transparent;
+}
+.bottomright-triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 0 200px 428px;
+	margin: 200px 0 0 582px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	border-color: transparent transparent #EEE transparent;
+}
+.outerear-triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 132px 81px 22px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	margin: 0 0 0 388px;
+	border-color: transparent transparent #EEE transparent;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+}
+.outerrightear-triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 22px 81px 132px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	margin: 0 0 0 638px;
+	border-color: transparent transparent #EEE transparent;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+}
+.trapezoid {
+	border-bottom: 39px solid #EEE;
+	border-left: 21px solid transparent;
+	border-right: 21px solid transparent;
+	height: 0;
+	width: 64px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	margin: 0 0 0 536px;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+}

@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript">
+			var choice = 1;
+			function check(){
+				choice *= -1;
+				alert(choice);
+			}
+		</script>
+	</head>
+	<body>
+		<label><input type="checkbox" class="ios-switch" onclick="check();" checked /></label>
+
+		<script type="text/javascript">
+			var switches = document.querySelectorAll('input[type="checkbox"].ios-switch');
+
+			for (var i=0, sw; sw = switches[i++]; ) {
+				var div = document.createElement('div');
+				div.className = 'switch';
+				sw.parentNode.insertBefore(div, sw.nextSibling);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="outer-wrapper">
+	<div id="inner-wrapper">
+		<canvas id="myCanvas" class="stripes" width="1178" height="398" style="background: #000;" >
+		Your browser does not support the HTML5 canvas tag.</canvas>
+		<script>
+
+		var c=document.getElementById("myCanvas");
+		var ctx=c.getContext("2d");
+		ctx.beginPath();
+		ctx.moveTo(170, 200);
+		ctx.quadraticCurveTo(490, 190, 590, 400);
+		ctx.fillStyle="#EEE";
+		ctx.fill();
+		ctx.stroke();
+
+		var cty=c.getContext("2d");
+		cty.beginPath();
+		cty.moveTo(-2, 00);
+		cty.quadraticCurveTo(190, 80, 170, 200);
+		cty.fillStyle="#EEE";
+		cty.fill();
+		cty.stroke();
+
+		var ctz=c.getContext("2d");
+		ctz.beginPath();
+		ctz.moveTo(590, 400);
+		ctz.quadraticCurveTo(690, 180, 1010, 200);
+		ctz.fillStyle="#EEE";
+		ctz.fill();
+		ctz.stroke();
+
+		var ct1=c.getContext("2d");
+		ct1.beginPath();
+		ct1.moveTo(1010, 200);
+		ct1.quadraticCurveTo(990, 80, 1180, 00);
+		ct1.fillStyle="#EEE";
+		ct1.fill();
+		ct1.stroke();
+
+		var ct2=c.getContext("2d");
+		ct2.beginPath();
+		ct2.moveTo(00,00);
+		ct2.lineTo(390,00);
+		ct2.strokeStyle="#EEE";
+		ct2.stroke();
+
+		var ct3=c.getContext("2d");
+		ct3.beginPath();
+		ct3.moveTo(790,00);
+		ct3.lineTo(1180,00);
+		ct3.strokeStyle="#EEE";
+		ct3.stroke();
+
+		var ct4=c.getContext("2d");
+		ct4.beginPath();
+		ct4.moveTo(390, 00);
+		ct4.quadraticCurveTo(420, 80, 520, 80);
+		ct4.fillStyle="#EEE";
+		ct4.fill();
+		ct4.stroke();
+
+		var ct5=c.getContext("2d");
+		ct5.beginPath();
+		ct5.moveTo(790, 00);
+		ct5.quadraticCurveTo(760, 80, 660, 80);
+		ct5.fillStyle="#EEE";
+		ct5.fill();
+		ct5.stroke();
+
+		var ct6=c.getContext("2d"); //left ear
+		ct6.beginPath();
+		ct6.moveTo(520, 80);
+		ct6.quadraticCurveTo(532, 82, 540, 00);
+		ct6.fillStyle="#EEE";
+		ct6.fill();
+		ct6.stroke();
+
+		var ct7=c.getContext("2d"); //right ear
+		ct7.beginPath();
+		ct7.moveTo(660, 80);
+		ct7.quadraticCurveTo(648, 82, 640, 00);
+		ct7.fillStyle="#EEE";
+		ct7.fill();
+		ct7.stroke();
+
+		var ct8=c.getContext("2d"); //left ear - inner
+		ct8.beginPath();
+		ct8.moveTo(540, 00);
+		ct8.quadraticCurveTo(550, 40, 560, 40);
+		ct8.fillStyle="#EEE";
+		ct8.fill();
+		ct8.stroke();
+
+		var ct9=c.getContext("2d"); //right ear - inner
+		ct9.beginPath();
+		ct9.moveTo(640, 00);
+		ct9.quadraticCurveTo(630, 40, 620, 40);
+		ct9.fillStyle="#EEE";
+		ct9.fill();
+		ct9.stroke();
+
+		var c=document.getElementById("myCanvas");
+		var ct10=c.getContext("2d");
+		ct10.beginPath();
+		ct10.moveTo(560,40);
+		ct10.bezierCurveTo(570,34,610,34,620,40);
+		ct10.fillStyle="#EEE";
+		ct10.fill();
+		ct10.stroke();
+		</script> 
+		<div class="topleft-triangle"></div>
+		<div class="topright-triangle"></div>
+		<div class="outerear-triangle"></div>
+		<div class="outerrightear-triangle"></div>
+		<div class="trapezoid"></div>
+		<div class="bottomleft-triangle"></div>
+		<div class="bottomright-triangle"></div>
+		<div class="leftbottom-square"></div>
+		<div class="rightbottom-square"></div>
+	</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41597298-1', 'gautamkrishnan.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

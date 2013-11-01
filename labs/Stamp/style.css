@@ -1,0 +1,359 @@
+@font-face {
+	font-family: 'Conv_steelfish rg';
+	src: url('fonts/steelfish rg.eot');
+	src: local('☺'), url('fonts/steelfish rg.woff') format('woff'), url('fonts/steelfish rg.ttf') format('truetype'), url('fonts/steelfish rg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_mangal',Sans-Serif;
+	src: url('fonts/mangal.eot');
+	src: local('☺'), url('fonts/mangal.woff') format('woff'), url('fonts/mangal.ttf') format('truetype'), url('fonts/mangal.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'veveyregular';
+    src: url('fonts/vevey-webfont.eot');
+    src: url('fonts/vevey-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vevey-webfont.woff') format('woff'),
+         url('fonts/vevey-webfont.ttf') format('truetype'),
+         url('fonts/vevey-webfont.svg#veveyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'OstrichSansMedium';
+    src: url('fonts/ostrich-regular-webfont.eot');
+    src: url('fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('fonts/ostrich-regular-webfont.ttf') format('truetype'),
+         url('fonts/ostrich-regular-webfont.svg#OstrichSansMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	margin: 0;
+	background: #222;
+}
+.stamp-wrapper{
+	width: 400px;
+	margin: 0 auto;
+}
+.stamp-outer{
+	width: 400px;
+	height: 500px;
+	background: #EEE;
+	border: 1px solid #DDD;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	margin-top: -250px;
+}
+.stamp-innertop{
+	width: 400px;
+	height: 10px;
+	float: left;
+	margin: -1px 0 0 -1px;
+}
+.stamp-innerleft{
+	width: 10px;
+	height: 490px;
+	float: left;
+	margin: 0 0 0 -1px;
+}
+.stamp-innerright{
+	width: 10px;
+	height: 490px;
+	float: right;
+	margin: -492px -1px 0 0;
+}
+.stamp-innerbottom{
+	width: 400px;
+	height: 10px;
+	float: left;
+	margin: -7px 0 0 3px;
+}
+.top-cutout{
+	height: 8px;
+	width: 16px;
+	border-radius: 0 0 16px 16px;
+    -moz-border-radius: 0 0 16px 16px;
+    -webkit-border-radius: 0 0 16px 16px;
+    border: 1px solid #DDD;
+    border-top: 0;
+    background: #222;
+    margin-right: 7px;
+    float: left;
+}
+.bottom-cutout{
+	height: 8px;
+	width: 16px;
+	border-radius: 0 0 16px 16px;
+    -moz-border-radius: 0 0 16px 16px;
+    -webkit-border-radius: 0 0 16px 16px;
+    border: 1px solid #DDD;
+    border-top: 0;
+    background: #222;
+    margin-right: 7px;
+    float: left;
+    transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+}
+.left-cutout{
+	width: 16px;
+	height: 8px;
+	border-radius: 0 0 16px 16px;
+    -moz-border-radius: 0 0 16px 16px;
+    -webkit-border-radius: 0 0 16px 16px;
+    border: 1px solid #DDD;
+    border-top: 0;
+    margin: 7px 0 7px -5px;
+    float: left;
+    background: #222;
+	transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg); /* IE 9 */
+	-webkit-transform:rotate(-90deg); /* Safari and Chrome */
+}
+.right-cutout{
+	width: 16px;
+	height: 8px;
+	border-radius: 0 0 16px 16px;
+    -moz-border-radius: 0 0 16px 16px;
+    -webkit-border-radius: 0 0 16px 16px;
+    border: 1px solid #DDD;
+    border-top: 0;
+    margin: 7px 0 7px -3px;
+    float: left;
+    background: #222;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+}
+.top-cutout:first-child{
+	margin-left: 4px;
+}
+.top-cutout:last-child{
+	margin-right: 0px;
+}
+.stamp-innerframe{
+	width: 90%;
+	height: 90%;
+	margin: 5%;
+	margin-top: 24px;
+	margin-left: 18px;
+	border: 2px solid #79655E;
+	background: rgb(255,255,255); /* Old browsers */
+	position: relative;
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(140,117,102,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(140,117,102,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(140,117,102,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(140,117,102,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(140,117,102,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(140,117,102,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8c7566',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.baapu{
+	font-family: "Conv_mangal";
+	color: #FFF;
+	font-weight: bold;
+	font-size: 26px;
+	text-shadow: 3px 3px #79655E;
+	margin: 15px 0 0 20px;
+	float: left;
+}
+.urdu{
+	color: #FFF;
+	font-weight: bold;
+	font-size: 26px;
+	text-shadow: 3px 3px #79655E;
+	margin: 15px 20px 0 0;
+	float: right;
+}
+.gandhi{
+	position: relative;
+	margin: 60px 0 0 60px;
+}
+.gandhi-head{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #79655E;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	transform:rotate(-40deg);
+	-ms-transform:rotate(-40deg); /* IE 9 */
+	-webkit-transform:rotate(-40deg); /* Safari and Chrome */
+	float: left;
+	position: absolute;
+	margin-left: 89px;
+}
+.gandhi-body{
+	float: left;
+	transform:rotate(-110deg);
+	-ms-transform:rotate(-110deg); /* IE 9 */
+	-webkit-transform:rotate(-110deg); /* Safari and Chrome */
+	margin: 60px -23px 0 0;
+	position: absolute;
+	z-index: 1;
+}
+.gandhi-ear{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #79655E;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	transform:rotate(180deg);
+	-ms-transform:rotate(180deg); /* IE 9 */
+	-webkit-transform:rotate(180deg); /* Safari and Chrome */
+	float: left;
+	margin: 50px 0 0 120px;
+	position: absolute;
+}
+.gandhi-frame{
+	width: 60px;
+	height: 2px;
+	background: #79655E;
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg); /* IE 9 */
+	-webkit-transform:rotate(20deg); /* Safari and Chrome */
+	position: absolute;
+	margin: 61px 0 0 130px;
+}
+.gandhi-glass{
+	width: 12px;
+	height: 26px;
+	border: 2px solid #79655E;
+	border-radius: 50%;
+	margin: 60px 0 0 186px;
+	background: transparent;
+	transform:rotate(20deg);
+	-ms-transform:rotate(20deg); /* IE 9 */
+	-webkit-transform:rotate(20deg); /* Safari and Chrome */
+	position: absolute;
+}
+.gandhi-earblock{
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	float: left;
+	margin: 60px 0 0 128px;
+	position: absolute;
+	z-index: 2;
+}
+.stamp-lefttopbox{
+	float: left;
+	width: 70%;
+	height: 40px;
+	position: absolute;
+	bottom: 120px;
+	font-family: 'OstrichSansMedium';
+	font-weight: bolder;
+	font-size: 38px;
+	color: #6b5246;
+	letter-spacing: 0px;
+	word-spacing: 5px;
+	text-align: center;
+}
+.stamp-leftbottombox{
+	float: left;
+	width: 70%;
+	height: 40px;
+	position: absolute;
+	bottom: 76px;
+	font-family: 'OstrichSansMedium';
+	font-weight: bolder;
+	font-size: 28px;
+	color: #6b5246;
+	letter-spacing: 0px;
+	word-spacing: -1px;
+	text-align: center;
+}
+.stamp-rightone{
+	float: right;
+	font-family: 'veveyregular';
+	font-weight: bolder;
+	font-size: 110px;
+	width: 10%;
+	position: absolute;
+	color: #6b5246;
+	bottom: 68px;
+	right: 60px;
+}
+.stamp-1{
+	float: right;
+	font-family: 'veveyregular';
+	font-weight: bolder;
+	font-size: 48px;
+	width: 10%;
+	position: absolute;
+	color: #6b5246;
+	bottom: 128px;
+	right: 26px;
+}
+.stamp-divider{
+	height: 2px;
+	width: 20px;
+	background: #6b5246;
+	float: right;
+	bottom: 133px;
+	right: 44px;
+	position: absolute;
+}
+.stamp-2{
+	float: right;
+	font-family: 'veveyregular';
+	font-weight: bolder;
+	font-size: 48px;
+	width: 10%;
+	position: absolute;
+	color: #6b5246;
+	bottom: 82px;
+	right: 26px;
+}
+.stamp-a{
+	float: right;
+	font-family:'Conv_steelfish rg',Sans-Serif;
+	font-weight: lighter;
+	font-size: 48px;
+	width: 10%;
+	position: absolute;
+	color: #6b5246;
+	bottom: 132px;
+	right: 0px;
+}
+.stamp-s{
+	float: right;
+	font-family:'Conv_steelfish rg',Sans-Serif;
+	font-weight: lighter;
+	font-size: 48px;
+	width: 10%;
+	position: absolute;
+	color: #6b5246;
+	bottom: 92px;
+	right: 0px;
+}
+.stamp-bottompostage{
+	width: 100%;
+	height: 80px;
+	font-size: 80px;
+	letter-spacing: 3px;
+	background: #795D4F;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	color: #FFF;
+	font-family: 'veveyregular';
+}
+.stamp-footer{
+	color: #795D4F;
+	text-align: center;
+	margin-top: -19px;
+	font-size: 10px;
+	font-family: arial;
+}
