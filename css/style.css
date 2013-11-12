@@ -43,6 +43,7 @@ body{
 	margin: 0;
 	min-width: 980px;
 	padding: 0;
+	overflow-x: hidden !important;
 }
 .top-bar{
 	width: 100%;
@@ -93,6 +94,30 @@ body{
 .top-bar-inner-left li:first-child{
 	margin-left: 40px;
 }
+.mobilemenu-right{
+	display: none;
+}
+#mobilemenu-dropdown{
+	display: none;
+	position: absolute;
+	width: 100px;
+	height: auto;
+	border: 1px solid #DDD;
+	background: #FFF;
+	right: 10px;
+	top: 42px;
+	padding-left: 6px;
+	box-shadow: 0 0 1px #333;
+}
+#mobilemenu-dropdown li{
+	padding: 0;
+	list-style: none;
+	margin: 0;
+	text-align: left;
+	font-family: 'DroidSans';
+	font-size: 14px;
+	line-height: 34px;
+}
 p{
 	margin: 0 0 10px 0;	
 }
@@ -119,8 +144,8 @@ img{
 }
 .intro-section{
 	float: left;
-	margin-top: 200px;
-	width: 500px;
+	margin-top: 10%;
+	width: 50%;
 	font-family: 'MuseoSans';
 	line-height: 22px;
 }
@@ -130,8 +155,8 @@ img{
 	height: 216px;
 	border-radius: 50%;
 	border: 5px solid #EEE;
-	margin-left: 200px;
-	margin-top: 200px;
+	margin-left: 50px;
+	margin-top: 10%;
 	overflow: hidden;
 }
 #header h1, #pixels{
@@ -435,14 +460,14 @@ img{
 	background: #e74c3c;
 	color: white;
 	height: 1440px;
-	padding: 100px 0 0 0;	
+	padding: 00px 0 0 0;	
 	position: relative;
 }
 .labs-container{
 	position: absolute;
 	top: 20%;
 	height: 400px;
-	margin-top: -150px;
+	margin-top: 0px;
 }
 .labs-section{
 	width: 25%;
@@ -461,7 +486,7 @@ img{
 	background: #68BA00;
 	height: 1440px;
 	color: #FFF;
-	padding: 40px 0 0 0;
+	padding: 0px 0 0 0;
 }
 .about-section{
 	float: right;
@@ -506,4 +531,22 @@ img{
 	height: 800px;
 	color: #FFF;
 	padding: 40px 0 0 0;
+}
+@media only screen and (max-width: 800px){
+	#nav{
+		display: none;
+	}
+	.mobilemenu-right{
+		display: block;
+		float: right;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+	.mobilemenu-arrow{
+		float: right;
+		width: 20px;
+		height: 20px;
+		background: url('../images/sprite.png');
+		background-position: -4px 0px;
+	}
 }
