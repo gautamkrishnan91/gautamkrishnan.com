@@ -6,5 +6,5 @@ $(document).ready(function()
 	$('#about').height(window.innerHeight);
 });
 $('.mobilemenu-right').click(function(){
-	$( "#mobilemenu-dropdown" ).slideToggle();
+	$( "#mobilemenu-dropdown" ).fadeToggle();
 });

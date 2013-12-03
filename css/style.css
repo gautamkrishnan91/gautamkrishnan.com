@@ -533,6 +533,9 @@ img{
 	padding: 40px 0 0 0;
 }
 @media only screen and (max-width: 800px){
+	.top-bar-inner {
+		width: 100%;
+	}
 	#nav{
 		display: none;
 	}
@@ -548,5 +551,8 @@ img{
 		height: 20px;
 		background: url('../images/sprite.png');
 		background-position: -4px 0px;
+	}
+	.projects-section {
+    	width: 90%;
 	}
 }
