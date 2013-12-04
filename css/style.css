@@ -28,6 +28,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
+.row.full{
+	max-width: 90%;
+}
 @charset "utf-8";
 /* CSS Document */
 a, a:visited, a:focus, a:active{
@@ -38,6 +41,7 @@ h2{
 	font-family: 'MuseoSans';
 	font-weight: lighter;
 	font-size: 36px;
+	color: #FFF;
 }
 body{
 	margin: 0;
@@ -124,16 +128,17 @@ p{
 
 img{
 	border: 0;
+	max-width: 200%;
 }
 .container{
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 }
 .container-intro{
-	position: absolute;
+	position: relative;
 	height: 500px;
 	top: 50%;
-	margin-top: -250px;
+	margin-top: 0;
 }
 #intro{
 	background: #1abc9c;
@@ -144,7 +149,7 @@ img{
 }
 .intro-section{
 	float: left;
-	margin-top: 10%;
+	margin-top: 17%;
 	width: 50%;
 	font-family: 'MuseoSans';
 	line-height: 22px;
@@ -156,8 +161,11 @@ img{
 	border-radius: 50%;
 	border: 5px solid #EEE;
 	margin-left: 50px;
-	margin-top: 10%;
+	margin-top: 17%;
 	overflow: hidden;
+}
+.intro-pic img{
+	margin-left: -15px;
 }
 #header h1, #pixels{
 	color: #48941A;
@@ -371,7 +379,7 @@ img{
 
 .app-showcase, .webapp-showcase, .brand-showcase{
 	background: #3d8cbf;
-	width: 730px;
+	width: 830px;
 	margin: 0 auto;
 	margin-top: 50px;
 	height: 200px;
