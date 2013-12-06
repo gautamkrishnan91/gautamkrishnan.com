@@ -45,7 +45,6 @@ h2{
 }
 body{
 	margin: 0;
-	min-width: 980px;
 	padding: 0;
 	overflow-x: hidden !important;
 }
@@ -150,7 +149,6 @@ img{
 .intro-section{
 	float: left;
 	margin-top: 17%;
-	width: 50%;
 	font-family: 'MuseoSans';
 	line-height: 22px;
 }
@@ -539,6 +537,8 @@ img{
 	height: 800px;
 	color: #FFF;
 	padding: 40px 0 0 0;
+}
+@media only screen and (max-width: 800px){
 }
 @media only screen and (max-width: 800px){
 	.top-bar-inner {
