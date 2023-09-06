@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta name="keywords" content="Gautam,Krishnan,Website,Design,Designer,Zoho">
+<meta name="author" content="Gautam Krishnan">
+<meta name="description" content="Gautam Krishnan - Mobile and Web App Designer and Developer">
+<title>Gautam Krishnan - Mobile and Web App Designer and Developer.</title>
+<link rel="stylesheet" href="css/foundation.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/modal.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery_004.js"></script>
+<script type="text/javascript" src="js/jquery_002.js"></script>
+<script type="text/javascript" src="js/jquery_003.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	$('#intro').parallax("50%", 0.1);
+	$('#second').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+	$(".app-showcase").hide();
+	$(".webapp-showcase").hide();
+	$(".brand-showcase").hide();
+
+	$("#mobileapps").click(function(){
+    	$(".projects-icons").fadeOut(500);
+    	$(".app-showcase").delay(500).fadeIn(500);
+  	});
+
+  	$("#back-mobile").click(function(){
+    	$(".app-showcase").fadeOut(500);
+    	$(".webapp-showcase").fadeOut(500);
+    	$(".brand-showcase").fadeOut(500);
+    	$(".projects-icons").delay(500).fadeIn(500);
+  	});
+
+  	$("#webapps").click(function(){
+    	$(".projects-icons").fadeOut(500);
+    	$(".webapp-showcase").delay(500).fadeIn(500);
+  	});
+
+  	$("#back-web").click(function(){
+    	$(".app-showcase").fadeOut(500);
+    	$(".webapp-showcase").fadeOut(500);
+    	$(".brand-showcase").fadeOut(500);
+    	$(".projects-icons").delay(500).fadeIn(500);
+  	});
+
+  	$("#brands").click(function(){
+    	$(".projects-icons").fadeOut(500);
+    	$(".brand-showcase").delay(500).fadeIn(500);
+  	});
+
+  	$("#back-brand").click(function(){
+    	$(".app-showcase").fadeOut(500);
+    	$(".webapp-showcase").fadeOut(500);
+    	$(".brand-showcase").fadeOut(500);
+    	$(".projects-icons").delay(500).fadeIn(500);
+  	});
+
+})
+</script>
+</head>
+
+<body>
+	<div class="top-bar">
+		<div class="top-bar-inner">
+			<div class="logo"></div>
+			<div class="top-bar-inner-left">
+				Gautam Krishnan
+				<ul id="nav">
+					<li><a href="#intro">Home</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#labs">Labs</a></li>
+					<li><a href="#about">About</a></li>
+					<!-- <li><a href="#contact">Contact</a></li> -->
+					<li><a href="http://gkspeaksout.blogspot.com" target="_blank">Blog</a></li>
+				</ul>
+			</div>
+			<div class="mobilemenu-right">Menu<div class="mobilemenu-arrow"></div></div>
+			<ul id="mobilemenu-dropdown">
+				<li><a href="#intro">Home</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#labs">Labs</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="http://gkspeaksout.blogspot.com" target="_blank">Blog</a></li>
+			</ul>
+		</div>
+	</div>
+		<div id="intro">
+			<div class="container">
+				<div class="container-intro row full">
+					<div class="intro-section medium-6 large-8 columns">
+						<h2>Hi there!</h2>
+				        <p>I am Gautam Krishnan, a CS grad based in Chennai, India. I design and develop web and mobile applications. I love creating clean, elegant and creative designs. I strive to create beautiful designs to make a better web, one pixel at a time.</p> 
+				        <p>I am also trying to wear a photographer's hat these days.</p>
+				    </div>
+				    <div class="intro-pic medium-4 large-4 columns hide-for-small hide-for-medium left">
+				    	<img src="images/me.jpg">
+				    </div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="background-position: 50% 60px;" id="projects">
+			<div class="projects-section">
+		        <h2>Projects</h2>
+		        <div class="projects-icons">
+		        	<div class="projects-iconbase">
+		        		<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+							<div class="icon-wrapper">
+								<div id="mobileapps">
+									<div class="hi-icon hi-icon-mobile"></div>
+									<div class="project-caption">Mobile Applications</div>
+								</div>
+							</div>
+							<div class="icon-wrapper">
+								<div id="webapps">
+									<a class="hi-icon hi-icon-earth"></a>
+									<div class="project-caption">Web Applications</div>
+								</div>
+							</div>
+							<div class="icon-wrapper">
+								<div id="brands">
+									<a class="hi-icon hi-icon-star"></a>
+									<div class="project-caption">Branding</div>
+								</div>
+							</div>
+						</div>
+		        	</div>
+		        </div>
+		        <div class="app-showcase">
+		        	<div class="back" id="back-mobile">Back</div>
+		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/309530" target="_blank">
+		        		<img src="images/timer.png">
+		        		<div class="caption">Event Timer</div></a>
+		        	</div>
+		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/269994" target="_blank">
+		        		<img src="images/yoga.png">
+		        		<div class="caption">Yoga Guru</div></a>
+		        	</div>
+		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/304868" target="_blank">
+		        		<img src="images/bunk.png">
+		        		<div class="caption">Smart Bunk Manager</div></a>
+		        	</div>
+		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/319785" target="_blank">
+		        		<img src="images/fitness.png">
+		        		<div class="caption">Fitness PRO!</div></a>
+		        	</div>
+		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/270144" target="_blank">
+		        		<img src="images/wdi.png">
+		        		<div class="caption">Web Developer Ideas</div></a>
+		        	</div>
+		        </div>
+		        <div class="webapp-showcase">
+		        	<div class="back" id="back-web">Back</div>
+		        	<div class="showcase-icon"><a href="http://www.bioopps.com" target="_blank">
+		        		<img src="images/bio.png">
+		        		<div class="caption">BioOpps</div></a>
+		        	</div>
+		        	<div class="showcase-icon">
+		        		<img src="images/couch.png">
+		        		<div class="caption">Got Couch (Under Construction)</div>
+		        	</div>
+		        </div>
+		        <div class="brand-showcase">
+		        	<div class="back" id="back-brand">Back</div>
+		        	<div class="showcase-icon"><a href="#modal-bio" class="call-modal">
+		        		<img src="images/BioOpps.jpg" width="96px" height="96px">
+		        		<div class="caption">BioOpps</div></a>
+		        	</div>
+		        	<div class="showcase-icon"><a href="#modal-cursor" class="call-modal">
+		        		<img src="images/CursorStudio.jpg" width="96px" height="96px">
+		        		<div class="caption">CursorStudio</div></a>
+		        	</div>
+		        	<div class="showcase-icon no-right"><a href="#modal-doprep" class="call-modal">
+		        		<img src="images/DoPrepare.jpg" width="96px" height="96px">
+		        		<div class="caption">DoPrepare</div></a>
+		        	</div>
+		        	<div class="showcase-icon top-adj"><a href="#modal-gotcouch" class="call-modal">
+		        		<img src="images/GotCouch.jpg" width="96px" height="96px">
+		        		<div class="caption">GotCouch</div></a>
+		        	</div>
+		        	<div class="showcase-icon top-adj"><a href="#modal-indizza" class="call-modal">
+		        		<img src="images/Indizza.jpg" width="96px" height="96px">
+		        		<div class="caption">Indizza</div></a>
+		        	</div>
+		        	<div class="showcase-icon top-adj"><a href="#modal-univ" class="call-modal">
+		        		<img src="images/univissues.jpg" width="96px" height="96px">
+		        		<div class="caption">UnivIssues</div></a>
+		        	</div>
+
+		        	<!-- Modals Follow -->
+
+		        	<section class="semantic-content" id="modal-bio" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-inner">
+							<img src="images/bioOpps.jpg">
+						</div>
+						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
+					</section>
+
+					<section class="semantic-content" id="modal-cursor" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-inner">
+							<img src="images/CursorStudio.jpg">
+						</div>
+						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
+					</section>
+
+					<section class="semantic-content" id="modal-doprep" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-inner">
+							<img src="images/DoPrepare.jpg">
+						</div>
+						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
+					</section>
+
+					<section class="semantic-content" id="modal-gotcouch" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-inner">
+							<img src="images/GotCouch.jpg">
+						</div>
+						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
+					</section>		
+
+					<section class="semantic-content" id="modal-indizza" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-inner">
+							<img src="images/Indizza.jpg">
+						</div>
+						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
+					</section>			
+
+					<section class="semantic-content" id="modal-univ" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-inner">
+							<img src="images/univissues.jpg">
+						</div>
+						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
+					</section>					
+		        </div>
+		    </div>
+		    
+		</div>
+		
+		<div id="labs">
+			<div class="container">
+				<div class="labs-container">
+			    	<div class="labs-section">
+			        	<h2>Labs</h2>
+			            <p>Here's a collection of my experiments with web technologies. Some of them work only on modern Webkit based browsers (Like Google Chrome and Safari).</p>
+			        </div>
+			  		<div class="labs-showcase">
+			  			<div class="showcase-icon showcase-icon-labs">
+			  				<a href="labs/Peacock/index.html" target="_blank"><img src="images/peacock.jpg">
+			  				<div class="caption-labs">The CSS3 Peacock (Only modern webkit).</div></a>
+			  			</div>
+			  			<div class="showcase-icon showcase-icon-labs">
+			  				<a href="labs/Bat/index.html" target="_blank"><img src="images/bat.jpg">
+			  				<div class="caption-labs">The Bat, in pure HTML SVG Graphics.</div></a>
+			  			</div>
+			  			<div class="showcase-icon showcase-icon-labs">
+			  				<a href="labs/Parrot/index.html" target="_blank"><img src="images/parrot.jpg">
+			  				<div class="caption-labs">The CSS3 Parrot.</div></a>
+			  			</div>
+			  			<div class="showcase-icon showcase-icon-labs">
+			  				<a href="labs/Stamp/index.html" target="_blank"><img src="images/stamp.jpg">
+			  				<div class="caption-labs">An Indian Postage Stamp, made in CSS3.</div></a>
+			  			</div>
+			  			<div class="showcase-icon showcase-icon-labs">
+			  				<a href="labs/Disc/index.html" target="_blank"><img src="images/disc.jpg">
+			  				<div class="caption-labs">A rotating gramaphone disc (Only Webkit).</div></a>
+			  			</div>
+			  		</div>
+		  		</div>
+		    </div>
+		</div>
+		
+		<div id="about">
+			<div class="container">
+				<div class="about-section">
+				    <h2>About Me</h2>
+				    <p class="small">Hacker, Designer, Philatelist, avid Philotherian and a Proud Indian.</p>
+				    <p>
+				    	I am 21, based in Chennai, India. I have over three years of experience in designing and developing applications for web and mobile. I have pursued internships at Zoho Corporation (Dec'12 - Feb'13) and at National Informatics Centre, Govt. of India (June'12 - Dec'12). I love working on open source technologies. My skills include expertise on C, C++, Java, J2ME, HTML, CSS, Javascript, PhoneGap (Apache Cordova), XML, PHP and MySQL. I have also worked on QML, QtC++, Ruby on Rails, VB, XAML and C#.
+				    </p>
+			    </div>
+			    <div class="about-connect">
+			    	<div class="social-section">
+			    		Connect with me, or just say Hi!
+			    		<div class="social-icons">
+			    			<a href="http://www.facebook.com/gkthegr8" target="_blank"><img src="images/social/facebook.png" class="icon"></a>
+			    			<a href="http://www.twitter.com/gkthegr8" target="_blank"><img src="images/social/twitter.png" class="icon"></a>
+			    			<a href="mailto:gkthegr8@gmail.com?Subject=Hi,%20I%20just%20dropped%20by%20your%20website!" target="_blank"><img src="images/social/email.png" class="icon"></a>
+			    			<a href="https://plus.google.com/104701877866714557541/" target="_blank"><img src="images/social/google-plus.png" class="icon"></a>
+			    			<a href="http://in.linkedin.com/pub/gautam-krishnan/1a/521/7bb/" target="_blank"><img src="images/social/linkedin.png" class="icon"></a>
+			    			<a href="http://www.quora.com/Gautam-Krishnan" target="_blank"><img src="images/social/quora.png" class="icon"></a>
+			    			<a href="https://foursquare.com/gkthegr8" target="_blank"><img src="images/social/foursquare.png" class="icon"></a>
+			    			<a href="http://www.slideshare.net/gkrocks/" target="_blank"><img src="images/social/slideshare.png" class="icon"></a>
+			    			<a href="http://stackoverflow.com/users/1468857/gautam-krishnan" target="_blank"><img src="images/social/stackoverflow.png" class="icon"></a>
+			    			<a href="https://github.com/gkthegr8" target="_blank"><img src="images/social/github.png" class="icon"></a>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+		</div>
+		<!-- <div id="contact">
+			<div class="container">
+				
+			</div>
+		</div> -->
+		<script src="js/modal.js"></script>
+		<script type="text/javascript" src="js/responsive.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-41597298-1', 'gautamkrishnan.com');
+		  ga('send', 'pageview');
+
+		</script>
+		<script src="js/foundation.min.js"></script>
+</body></html>

@@ -1,0 +1,980 @@
+@font-face {
+  font-family: 'Ampersand';
+  src: url('../fonts/ampersand.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/ampersand.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ampersand.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/ampersand.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ampersand.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+a{
+	cursor: pointer !important;
+}
+html,
+body {
+	min-height: 100%;
+	width: 100%;
+	zoom: 1;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+body,h1,h2,h3,h4,h5{
+	font-family: 'Open Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 300;
+}
+.vert-text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+	position: relative;
+	z-index: 3;
+	float: left;
+	margin-top: 120px;
+}
+
+.vert-text h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 3em;
+	width: 100%;
+}
+
+#sidebar-wrapper {
+	margin-right: -250px;
+	right: 0;
+	width: 250px;
+	background: #FFF;
+	position: fixed;
+	height: 100%;
+	overflow-y: auto;
+	z-index: 1000;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+	position: absolute;
+	top: 0;
+	width: 250px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-nav li {
+	line-height: 40px;
+	text-indent: 20px;
+}
+
+.sidebar-nav li a {
+	color: #555555;
+	display: block;
+	text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+	color: #000;
+	background: rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+	height: 55px;
+	line-height: 55px;
+	font-size: 18px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+	color: #555555;
+}
+
+.sidebar-nav>.sidebar-brand a:hover {
+	color: #000;
+	background: none;
+}
+
+#menu-toggle {
+	top: 0;
+	right: 0;
+	position: fixed;
+	z-index: 4000;
+	display: none;
+}
+
+#sidebar-wrapper.active {
+	right: 250px;
+	width: 250px;
+	-webkit-transition: all 0.4s ease 0s;
+	-moz-transition: all 0.4s ease 0s;
+	-ms-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+
+.toggle {
+	margin: 5px 5px 0 0;
+}
+.top-bar{
+	position: absolute;
+	padding: 80px 80px 0 80px;
+	width: 100%;
+	z-index: 100;
+	color: #FFF;
+	.logo {
+		width: 55px;
+		height: 35px;
+		background: url("../img/logo.png");
+		position: absolute;
+		z-index: 10;
+		transition: 0.1s all;
+	}
+	ul.menu {
+		position: absolute;
+		right: 80px;
+		z-index: 10;
+		text-shadow: none;
+		li {
+			float: right;
+			list-style: none;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 300;
+			opacity: 0.8;
+			margin-right: 30px;
+			cursor: pointer;
+			&:first-child {
+				margin-right: 0;
+			}
+			a{
+				color: inherit;
+				text-decoration: none;
+				&.selected {
+					font-weight: 400;
+					opacity: 1;
+					border-bottom: 1px solid #fff;
+				}
+			}
+		}
+	}
+}
+.fix-search{
+	position: fixed;
+	padding-top: 10px;
+    background-color: #FFF;
+	color: #555;
+    height: 60px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #777;
+	
+	ul.menu{
+		padding-top: 10px;
+	}
+	ul.menu li{
+		font-weight: 400 !important;
+	}
+	.logo{
+		width: 35px;
+    	height: 22px;
+		background: url("http://localhost/website/img/logo_alt.png");
+		margin: 10px;
+	}
+}
+.header {
+	height: 100%;
+	min-height: 100%;
+	width: 100%;
+	position: relative;
+	background: url('../img/1.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	color: #FFF;
+	text-shadow: none;
+	
+	&:after {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: #1E88E5;
+		opacity: 0.96;
+		content: "";
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.header-wrapper {
+		display: table;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		padding: 80px 80px 0 80px;
+		color: #FFF;
+	}
+}
+
+/* Fold 1 milestones */
+
+.milestones{
+	bottom: 50px;
+	width: 100%;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	
+	&:after{
+		width: 100%;
+		position: absolute;
+		height: 2px;
+		background: #FFF;
+		content: "";
+		left: 0;
+    	bottom: 0;
+		z-index: -2;
+	}
+	
+	ul{
+		width: 100%;
+		li{
+			height: 100px;
+			bottom: 0;
+			padding-left: 60px;
+			width: 20%;
+			float: left;
+			&:before{
+				width: 3px;
+				height: 100px;
+				background: #FFF;
+				position: absolute;
+				content: "";
+				margin: -2px 0 0 -3px;
+			}
+
+			.drop {
+				width: 70px;
+				height: 70px;
+				border-radius: 0 50% 50% 50%;
+				border: 3px solid white;
+				transform: rotate(225deg);
+				margin-top: -83px;
+				background: #FFF;
+				margin-left: -37px;
+
+				.drop-icon.work{
+					width: 36px;
+					height: 32px;
+					background: url('../img/work.png');
+					margin: 14px 12px;
+					transform: rotate(-225deg);
+				}
+				.drop-icon.student{
+					width: 36px;
+					height: 34px;
+					background: url('../img/grad.png');
+					margin: 14px 12px;
+					transform: rotate(-225deg);
+				}
+				.drop-icon.job{
+					width: 33px;
+					height: 38px;
+					background: url('../img/me.png');
+					margin: 10px 12px;
+					transform: rotate(-225deg);
+				}
+			}
+			.text{
+				padding: 15px 10px 0 10px;
+				.heading{
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 5px;
+					line-height: 21px;
+				}
+				.desc{
+					font-size: 16px;
+    				font-weight: 300;
+					line-height: 21px;
+				}
+			}
+			.year{
+				font-size: 20px;
+				font-weight: 600;
+				position: absolute;
+				margin: 25px -37px;
+				width: 70px;
+				text-align: center;
+				opacity: 0.9;
+			}
+			&:after{
+				width: 11px;
+				height: 11px;
+				border-radius: 50%;
+				background: #2196F3;
+				border: 2px solid #FFF;
+				position: absolute;
+				content: "";
+				z-index: 20;
+    			margin: 4px -7px;
+			}
+		}
+	}
+}
+
+
+.container {
+	position: relative;
+	z-index: 3;
+}
+
+.header .container {
+	display: table;
+	height: 100%;
+	position: relative;
+}
+
+.header-inner {
+	.mobile-text{display: none;}
+	width: 100%;
+	float: left;
+	& * {
+		line-height: 60px !important;
+	}
+}
+
+.mypic-container {
+	float: right;
+	width: 200px;
+	position: absolute;
+	right: 80px;
+	z-index: 10;
+	margin-top: 100px;
+}
+
+//.mypic-container a img {
+//	margin: 0 10px 0 10px;
+//}
+.portfolio-link,
+.portfolio-link:hover {
+	float: right;
+	width: 200px;
+	height: 44px;
+	border-radius: 44px;
+	border: 1px solid #3498db;
+	background: #FFF;
+	text-align: left;
+	padding: 9px 0 20px 6px;
+	font-size: 16px;
+	color: #3498db;
+	cursor: pointer;
+	text-decoration: none !important;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	img {
+		width: 24px;
+		height: 21px;
+		margin: 2px 10px 0 10px;
+		display: inline-block;
+		float: left;
+	}
+	span {
+		margin: 1px -1px;
+		display: inline-block;
+	}
+}
+
+.resume-link,
+.resume-link:hover {
+	float: right;
+	width: 200px;
+	height: 44px;
+	border-radius: 44px;
+	border: 1px solid #3498db;
+	background: #FFF;
+	text-align: left;
+	padding: 9px 0 20px 6px;
+	font-size: 16px;
+	color: #3498db;
+	cursor: pointer;
+	text-decoration: none !important;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	img {
+		width: 18px;
+		height: 21px;
+		margin: 2px 10px 0 12px;
+		display: inline-block;
+		float: left;
+	}
+	span {
+		margin: 1px -3px;
+		display: inline-block;
+	}
+}
+
+.dribbble-link,
+.dribbble-link:hover {
+	float: right;
+	width: 200px;
+	height: 44px;
+	border-radius: 44px;
+	border: 1px solid #3498db;
+	background: #FFF;
+	text-align: left;
+	padding: 9px 0 20px 6px;
+	font-size: 16px;
+	color: #3498db;
+	cursor: pointer;
+	text-decoration: none !important;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	img {
+		width: 21px;
+		height: 21px;
+		margin: 2px 10px 0 8px;
+		display: inline-block;
+		float: left;
+	}
+	span {
+		margin: 1px -1px;
+		display: inline-block;
+	}
+}
+
+p.headertext {
+	font-size: 40px;
+	font-weight: 300;
+	margin-top: 10px;
+	width: 100%;
+	line-height: 1.8em;
+	float: left;
+}
+
+.intro {
+	padding: 50px 0;
+}
+.portfolio {
+	width: 100%;
+	min-height: 100%;
+	padding: 0 80px;
+	position: relative;
+	background: url('../img/floral2.jpg') repeat;
+	float: left;
+	color: #FFF;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	
+	.rg-gallery{
+		max-width: 1170px;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+	.row{
+		margin: 0;
+	}
+	&:after {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e96443+0,904e95+100 */
+		background: #e96443; /* Old browsers */
+		background: -moz-linear-gradient(top,  #e96443 0%, #904e95 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #e96443 0%,#904e95 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #e96443 0%,#904e95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e96443', endColorstr='#904e95',GradientType=0 ); /* IE6-9 */
+		opacity: 0.94;
+		content: "";
+		top: 0;
+		left: 0;
+	}
+	.grid{
+		width: 100%;
+		position: relative;
+		z-index: 2;
+		margin-top: 80px;
+		float: left;
+    	padding-bottom: 50px;
+		
+		.thumb{
+			padding: 5px;
+			.thumbnail{
+				margin-bottom: 0px;
+				border: 1px solid #ddd;
+				overflow: hidden;
+				padding: 0;
+			}
+		}
+	}
+}
+.section-title{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+	font-size: 30px;
+	padding-top: 110px;
+	padding-bottom: 15px;
+}
+.section-desc{
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+}
+.projects .section-desc, .labs .section-desc{
+	margin-bottom: 60px;
+}
+#container{
+	width: 100%;
+}
+.labs {
+	background: url('../img/fl.jpg') repeat;
+	padding: 50px 0;
+	color: #ffffff;
+	display: table;
+	height: 100%;
+	width: 100%;
+	color: #FFF;
+	position: relative;
+}
+
+.labs:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#68b700+0,7b920a+100 */
+	background: rgb(104,183,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(104,183,0,1) 0%, rgba(123,146,10,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(104,183,0,1) 0%,rgba(123,146,10,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(104,183,0,1) 0%,rgba(123,146,10,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68b700', endColorstr='#7b920a',GradientType=0 ); /* IE6-9 */
+	opacity: 0.98;
+	content: "";
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.hexagon {
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -o-transform: rotate(120deg);
+    transform: rotate(120deg);
+    cursor: pointer;
+}
+.hexagon-in1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+.hexagon-in2 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    visibility: visible;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+.hexagon2 {
+    width: 150px;
+    height: 300px;
+    margin: -80px 0 0 8px;
+}
+.img1{background-image: url('../img/peacock2.jpg');}
+.labs p {
+	font-weight: 300 !important;
+	font-size: 20px;
+	line-height: 1.6em;
+	margin-bottom: 50px;
+}
+
+.labs-item {
+	margin-bottom: 50px;
+}
+
+i.labs-icon {
+	display: inline-block;
+	font-size: 56px;
+	width: 180px;
+	height: 180px;
+	line-height: 136px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+i.labs-icon img {
+	margin-top: -2px;
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+.projects {
+	position: relative;
+	background: url('../img/floral5.jpg') repeat;
+	color: #FFF;
+	padding: 50px 0;
+	color: #ffffff;
+	display: table;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.projects:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5045ac+0,763ebb+100 */
+	background: rgb(80,69,172); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(80,69,172,1) 0%, rgba(118,62,187,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(80,69,172,1) 0%,rgba(118,62,187,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(80,69,172,1) 0%,rgba(118,62,187,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5045ac', endColorstr='#763ebb',GradientType=0 ); /* IE6-9 */
+
+
+	opacity: 0.92;
+	content: "";
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.projects p {
+	font-weight: 300 !important;
+	font-size: 20px;
+	line-height: 1.6em;
+	margin-bottom: 50px;
+}
+.projects{
+	.project-item {
+		margin-bottom: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+		position: relative;
+    	float: left;
+		a{
+			float: left;
+			position: relative;
+			border-radius: 5px;
+			overflow: hidden;
+			h3{
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.5+37,0.8+100 */
+				background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 37%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 37%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 37%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#cc000000',GradientType=0 ); /* IE6-9 */
+				position: absolute;
+				margin-top: -70px;
+				color: #FFF;
+				height: 70px;
+				width: 100%;
+				padding: 31px 20px;
+				font-size: 18px;
+				text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+			}
+		}
+	}
+	.img-responsive{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.mlh{
+		display: block;
+		width: 80px;
+		position: absolute;
+		z-index: 10;
+		right: 30px;
+		top: -8px;
+		filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.7));
+		
+		img{
+			max-width: 100%;
+			max-height: 100%;
+			display: block;
+		}
+		
+		&:after{
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 10px 8px 7px;
+			border-color: transparent transparent #aaa transparent;
+			position: absolute;
+			content: "";
+			top: 0;
+			left: -8px;
+			z-index: -2;
+		}
+	}
+	.winner-ribbon{
+		display: block;
+		width: 79px;
+		height: 79px;
+		position: absolute;
+		z-index: 10;
+		left: 0px;
+		top: 0px;
+		filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.7));
+	}
+}
+.honors {
+	background: url('../img/floral3.jpg') repeat;
+	padding: 50px 0;
+	color: #ffffff;
+	display: table;
+	height: 100%;
+	width: 100%;
+	color: #FFF;
+	position: relative;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	
+	.row{margin: 0;}
+	p{
+		font-size: 17px;
+		font-weight: 300;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	}
+	.section-title{
+		padding-top: 50px;
+	}
+	.ampersand{
+		font-family: 'Ampersand';
+		font-size: 90px;
+		margin: 0 25px;
+		top: 24px;
+		display: inline-block;
+		position: relative;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	}
+	.seventy{
+		float: left;
+		width: 70%;
+		font-size: 18px;
+		line-height: 34px;
+		margin-top: 100px;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+		position: relative;
+	}
+	.thirty{
+		float: left;
+		width: 30%;
+		margin-top: 90px;
+		margin-bottom: 100px;
+		display: table;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		img{
+			width: 70%;
+			height: auto;
+			margin: 0 auto;
+			display: table-cell;
+			filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.5));
+			float: right;
+    		vertical-align: middle;
+		}
+	}
+}
+
+.honors:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d3672b+0,c53427+100 */
+	background: rgb(211,103,43); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(211,103,43,1) 0%, rgba(197,52,39,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(211,103,43,1) 0%,rgba(197,52,39,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(211,103,43,1) 0%,rgba(197,52,39,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3672b', endColorstr='#c53427',GradientType=0 ); /* IE6-9 */
+
+	opacity: 0.96;
+	content: "";
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.about {
+	padding: 50px 0;
+	display: table;
+	height: 100%;
+	width: 100%;
+	color: #FFF;
+	background: url('../img/floral4.jpg') repeat;
+	position: relative;
+}
+.about:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	content: "";
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#33808f+0,223e72+100 */
+	background: rgb(51,128,143); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(51,128,143,1) 0%, rgba(34,62,114,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(51,128,143,1) 0%,rgba(34,62,114,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(51,128,143,1) 0%,rgba(34,62,114,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33808f', endColorstr='#223e72',GradientType=0 ); /* IE6-9 */
+	opacity: 0.94;
+}
+.about p {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.about:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	content: "";
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.about-text {
+	line-height: 24px;
+	margin-top: 50px;
+	font-weight: 300;
+	letter-spacing: 0.04em;
+	font-weight: 300 !important;
+	font-size: 16px;
+	text-align: left;
+	padding: 0 30px;
+}
+
+.social-section {
+	width: 240px;
+	margin: 0 auto;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.social-icons {
+	float: left;
+	margin-top: 10px;
+}
+
+.icon {
+	margin: 10px 0 0 10px;
+	box-shadow: 0px 1px 4px #333;
+	border-radius: 5px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1180px) {
+	.header-wrapper {
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+		display: block;
+	}
+	.vert-text {
+		display: block;
+	}
+	.header-inner {
+		width: 100%;
+		float: none;
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
+	p.headertext {
+		width: 100%;
+		float: none;
+	}
+}
+
+@media (max-width: 680px) {
+	p.headertext {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 580px) {
+	p.headertext {
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 480px) {
+	p.headertext {
+		max-width: 100%;
+	}
+	@media (max-width: 991px) {
+		#about .col-md-2 {
+			width: 300px !important;
+		}
+	}
+}
+
+/* NEW MEDIA QUERIES */
+
+@media (max-width: 1190px) {
+	.milestones{display: none;}
+	.vert-text{margin-bottom: 20px;}
+	.mypic-container{
+		float: none;
+		width: 200px;
+		position: relative;
+		right: 0px;
+		z-index: 10;
+		height: 200px;
+		margin: 100px auto 0 auto;
+	}
+}
+@media (max-width: 800px) {
+	.menu{ display: none;}
+	.top-bar .logo{
+		left: 50%;
+    	margin-left: -28px;
+	}
+	.header{    height: auto;
+    min-height: 100%;}
+	#menu-toggle {
+		display: block;
+	}
+	.mobile-text{
+		display: block !important;
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 30px !important;
+	}
+	.portfolio{
+		padding: 0 20px;
+	}
+	.header-inner h1, .header-inner p{display: none}
+}
+@media (max-width: 900px) {
+	.honors .thirty{display: none;}
+	.honors .seventy{width: 100%;}
+}

@@ -1,0 +1,202 @@
+#map{
+	width: 71%;
+	float: left;
+	position: absolute;
+	left: 250px;
+}
+.clearleft{
+	clear: left;
+}
+.universal-legend{
+	padding: 0px;
+	background-color: #FFF;
+	color: #333;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 94px;
+	right: 10px;	
+	z-index: 20;
+	box-sizing: border-box;
+	width: 0px;
+	height: 0px;
+	overflow: auto;
+	float: left;
+	border: 1px solid #DDD;
+	transition: all 0.1s ease;
+	.legend-title{
+		width: 100%;
+		float: left;
+		text-transform: uppercase;
+		font-size: 1rem;
+		text-align: center;
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+	ul.first-set{	
+		width: 100%;
+		float: left;
+		li{
+			padding: 5px 0;
+			float: left;
+			width: 100%;
+			.legend-icon{
+				width: 100px;
+				height: 8px;
+				float: left;
+				margin-top: 4px;
+				margin-right: 30px;
+				&.cat5{
+					background-color: #FF6060;
+				}
+				&.cat4{
+					background-color: #FF8F20;
+				}
+				&.cat3{
+					background-color: #FFC140;
+				}
+				&.cat2{
+					background-color: #FFE775;
+				}
+				&.cat1{
+					background-color: #FFFFCC;
+				}
+				&.ts{
+					background-color: #00FAF4;
+				}
+				&.td{
+					background-color: #5EBAFF;
+				}
+				&.lowpressure{
+					background-color: #000;	
+				}
+				&.highpressure{
+					background-color: transparent;	
+					border-bottom: 7px dashed #000;
+					height: 0px;
+				}
+				&.gray{
+					background-color: gray;	
+				}
+			}
+			.quad-icon{
+				width: 100px;
+				height: 20px;
+				float: left;
+				position: relative;
+
+				&:after{
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					position: absolute;
+					left: 50%;
+					top: 0;
+					margin-left: -10px;
+					content: "";
+				}
+				&.red:after{
+					background-color: #FF0000;
+				}
+				&.amber:after{
+					background-color: #FFFF4D;
+				}
+				&.blue:after{
+					background-color: #3366FF;
+				}
+			}
+			.legend-text{
+				float: right;
+				font-size: 0.9rem;
+
+				&.quad{
+					margin-top: 2px;
+				}
+			}
+		}
+	}
+	ul.second-set{
+		width: 100%;
+		float: left;
+		padding: 5px 0;
+
+		li{
+			width: 50%;
+			float: left;
+			margin-bottom: 10px;
+
+			.status-icon{
+				width: 30px;
+				height: 20px;
+				float: left;
+				position: relative;
+				font-size: 1rem;
+				text-align: center;
+				padding-top: 5px;
+			}
+			.status-text{
+				float: left;
+				font-size: 0.8rem;
+				width: 100px;
+				margin-left: 5px;
+				line-height: 1rem;
+			}
+		}
+	}
+}
+.universal-legend.expanded{
+	animation: 0.1s legend-expand linear forwards;
+}
+@keyframes legend-expand{
+	0%{
+		width: 0;
+		height: 0;
+		padding: 0;
+	}
+	100%{
+		width: 300px;
+		height: 500px;
+		padding: 10px;
+	}
+}
+.universal-legend.hidden{
+	animation: 0.1s legend-hide linear forwards;
+}
+@keyframes legend-hide{
+	0%{
+		width: 300px;
+		height: 500px;
+		padding: 10px;
+	}
+	100%{
+		width: 0;
+		height: 0;
+		padding: 0;
+	}
+}
+.leaflet-control-container .leaflet-top{
+	z-index: 10;
+}
+.leaflet-control-attribution{
+	display: none;
+}
+.legend-icon-outer{
+	width: 27px;
+	height: 27px;
+	position: absolute;
+	bottom: 60px;
+	right: 48px;
+	box-sizing: border-box;
+	background-color: #FFF;
+	border: 1px solid #999;
+	border-radius: 2px;
+}
+.legend-icon-inner{
+	width: 20px;
+	height: 20px;
+	background-color: #333;
+	-webkit-mask:  url('../images/legend.svg') no-repeat;
+	mask: url('../images/legend.svg') no-repeat;
+	-webkit-mask-size: 20px 20px;
+	mask-size: 20px 20px;
+	margin: 2.5px;
+}

@@ -1,324 +1,296 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<meta name="keywords" content="Gautam,Krishnan,Website,Design,Designer,Zoho">
-<meta name="author" content="Gautam Krishnan">
-<meta name="description" content="Gautam Krishnan - Mobile and Web App Designer and Developer">
-<title>Gautam Krishnan - Mobile and Web App Designer and Developer.</title>
-<link rel="stylesheet" href="css/foundation.min.css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/modal.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery_004.js"></script>
-<script type="text/javascript" src="js/jquery_002.js"></script>
-<script type="text/javascript" src="js/jquery_003.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	$('#nav').localScroll(800);
-	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.4);
-	$('#third').parallax("50%", 0.3);
-	$(".app-showcase").hide();
-	$(".webapp-showcase").hide();
-	$(".brand-showcase").hide();
+<html lang="en">
 
-	$("#mobileapps").click(function(){
-    	$(".projects-icons").fadeOut(500);
-    	$(".app-showcase").delay(500).fadeIn(500);
-  	});
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Gautam Krishnan's Website and Portfolio">
+	<meta name="author" content="Gautam Krishnan">
+	<title>Gautam Krishnan's Website and Portfolio</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/gallery-wrapper.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
 
-  	$("#back-mobile").click(function(){
-    	$(".app-showcase").fadeOut(500);
-    	$(".webapp-showcase").fadeOut(500);
-    	$(".brand-showcase").fadeOut(500);
-    	$(".projects-icons").delay(500).fadeIn(500);
-  	});
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
-  	$("#webapps").click(function(){
-    	$(".projects-icons").fadeOut(500);
-    	$(".webapp-showcase").delay(500).fadeIn(500);
-  	});
+	<script src="js/less.js" type="text/javascript"></script>
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+			<div class="rg-image-nav">
+				<a href="#" class="rg-image-nav-prev">Previous Image</a>
+				<a href="#" class="rg-image-nav-next">Next Image</a>
+			</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
 
-  	$("#back-web").click(function(){
-    	$(".app-showcase").fadeOut(500);
-    	$(".webapp-showcase").fadeOut(500);
-    	$(".brand-showcase").fadeOut(500);
-    	$(".projects-icons").delay(500).fadeIn(500);
-  	});
-
-  	$("#brands").click(function(){
-    	$(".projects-icons").fadeOut(500);
-    	$(".brand-showcase").delay(500).fadeIn(500);
-  	});
-
-  	$("#back-brand").click(function(){
-    	$(".app-showcase").fadeOut(500);
-    	$(".webapp-showcase").fadeOut(500);
-    	$(".brand-showcase").fadeOut(500);
-    	$(".projects-icons").delay(500).fadeIn(500);
-  	});
-
-})
-</script>
+		</div>
+	</script>
 </head>
 
 <body>
-	<div class="top-bar">
-		<div class="top-bar-inner">
-			<div class="logo"></div>
-			<div class="top-bar-inner-left">
-				Gautam Krishnan
-				<ul id="nav">
-					<li><a href="#intro">Home</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#labs">Labs</a></li>
-					<li><a href="#about">About</a></li>
-					<!-- <li><a href="#contact">Contact</a></li> -->
-					<li><a href="http://gkspeaksout.blogspot.com" target="_blank">Blog</a></li>
-				</ul>
-			</div>
-			<div class="mobilemenu-right">Menu<div class="mobilemenu-arrow"></div></div>
-			<ul id="mobilemenu-dropdown">
-				<li><a href="#intro">Home</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#labs">Labs</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="http://gkspeaksout.blogspot.com" target="_blank">Blog</a></li>
-			</ul>
-		</div>
+	<a id="menu-toggle" href="#" class="btn btn-default btn-lg toggle"><i class="fa fa-bars"></i></a>
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+			<li class="sidebar-brand"><a href="#">Gautam Krishnan</a></li>
+			<li><a href="#top">Home</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#writing">Writing</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="https://www.gautamkrishnan.com/Gautam_Krishnan_Resume.pdf" target="_blank">Resume</a></li>
+			<li><a href="http://www.gautamkrishnan.com/blog/" target="_blank">Blog</a></li>
+		</ul>
 	</div>
-		<div id="intro">
-			<div class="container">
-				<div class="container-intro row full">
-					<div class="intro-section medium-6 large-8 columns">
-						<h2>Hi there!</h2>
-				        <p>I am Gautam Krishnan, a CS grad based in Chennai, India. I design and develop web and mobile applications. I love creating clean, elegant and creative designs. I strive to create beautiful designs to make a better web, one pixel at a time.</p> 
-				        <p>I am also trying to wear a photographer's hat these days.</p>
-				    </div>
-				    <div class="intro-pic medium-4 large-4 columns hide-for-small hide-for-medium left">
-				    	<img src="images/me.jpg">
-				    </div>
+	<div class="top-bar">
+		<div class="logo"></div>
+		<ul class="menu">
+			<li><a href="https://www.gautamkrishnan.com/Gautam_Krishnan_Resume.pdf" target="_blank">Resume<i class="material-icons">open_in_new</i></a></li>
+			<li><a href="https://www.gautamkrishnan.com/labs" target="_blank">Labs<i class="material-icons">open_in_new</i></a></li>
+			<li><a href="#about" id="abouttab">About</a></li>
+			<li><a href="#writing" id="writingtab">Writing</a></li>
+			<li><a href="#work" id="worktab">Work</a></li>
+			<li><a href="#top" id="toptab">Home</a></li>
+		</ul>
+	</div>
+	<div id="top" class="header">
+		<div class="header-wrapper" id="findheader">
+			<div class="vert-text">
+				<div class="header-inner">
+					<h1>Hi, I'm Gautam! My designs are</h1>
+					<div class="simpleDelightful">
+						<span class="simple">Simple</span>
+						<span class="ampersand"><img src="images/ampersand-b.svg"></span>
+						<span class="delightful">Delightful.</span>
+					</div>
+					<h1>And that's my forte.</h1>
 				</div>
 			</div>
 		</div>
-		
-		<div style="background-position: 50% 60px;" id="projects">
-			<div class="projects-section">
-		        <h2>Projects</h2>
-		        <div class="projects-icons">
-		        	<div class="projects-iconbase">
-		        		<div class="hi-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-							<div class="icon-wrapper">
-								<div id="mobileapps">
-									<div class="hi-icon hi-icon-mobile"></div>
-									<div class="project-caption">Mobile Applications</div>
-								</div>
-							</div>
-							<div class="icon-wrapper">
-								<div id="webapps">
-									<a class="hi-icon hi-icon-earth"></a>
-									<div class="project-caption">Web Applications</div>
-								</div>
-							</div>
-							<div class="icon-wrapper">
-								<div id="brands">
-									<a class="hi-icon hi-icon-star"></a>
-									<div class="project-caption">Branding</div>
-								</div>
-							</div>
+	</div>
+	<div id="work" class="work">
+		<div class="container" id="findprojects">
+			<div class="row">
+				<div class="title-container">
+					<div class="section-title">WORK</div>
+				</div>
+				<div class="work-container">
+					<div class="work-item">
+						<div class="work-title">Vitech, Inc., Mountain View.</div>
+						<div class="work-desc">Product Designer</div>
+						<div class="work-year">2017 - Present</div>
+					</div>
+					<div class="work-item">
+						<div class="work-title">University of Illinois at Chicago.</div>
+						<div class="work-desc">Master's in Computer Science</div>
+						<div class="work-year">2015 - 2017</div>
+					</div>
+					<div class="work-item">
+						<div class="work-title">Zoho Corp, Inc.</div>
+						<div class="work-desc">Product Designer</div>
+						<div class="work-year">2012 - 2015</div>
+					</div>
+				</div>
+			</div>
+			<div class="row projects-container">
+				<div class="col-md-4 project-item">
+					<a href="https://gautamkrishnan.com/projects/campaigncenter" target="_blank">
+						<div class="project-inner one">
+							<img class="img" src="img/campaign1.png" alt="" style="zoom: 0.5">
+							<h3>Campaign Center</h3>
+							<div class="project-desc">Creation and management of campaigns for Vitech's clients.</div>
 						</div>
-		        	</div>
-		        </div>
-		        <div class="app-showcase">
-		        	<div class="back" id="back-mobile">Back</div>
-		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/309530" target="_blank">
-		        		<img src="images/timer.png">
-		        		<div class="caption">Event Timer</div></a>
-		        	</div>
-		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/269994" target="_blank">
-		        		<img src="images/yoga.png">
-		        		<div class="caption">Yoga Guru</div></a>
-		        	</div>
-		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/304868" target="_blank">
-		        		<img src="images/bunk.png">
-		        		<div class="caption">Smart Bunk Manager</div></a>
-		        	</div>
-		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/319785" target="_blank">
-		        		<img src="images/fitness.png">
-		        		<div class="caption">Fitness PRO!</div></a>
-		        	</div>
-		        	<div class="showcase-icon"><a href="http://store.ovi.com/content/270144" target="_blank">
-		        		<img src="images/wdi.png">
-		        		<div class="caption">Web Developer Ideas</div></a>
-		        	</div>
-		        </div>
-		        <div class="webapp-showcase">
-		        	<div class="back" id="back-web">Back</div>
-		        	<div class="showcase-icon"><a href="http://www.bioopps.com" target="_blank">
-		        		<img src="images/bio.png">
-		        		<div class="caption">BioOpps</div></a>
-		        	</div>
-		        	<div class="showcase-icon">
-		        		<img src="images/couch.png">
-		        		<div class="caption">Got Couch (Under Construction)</div>
-		        	</div>
-		        </div>
-		        <div class="brand-showcase">
-		        	<div class="back" id="back-brand">Back</div>
-		        	<div class="showcase-icon"><a href="#modal-bio" class="call-modal">
-		        		<img src="images/BioOpps.jpg" width="96px" height="96px">
-		        		<div class="caption">BioOpps</div></a>
-		        	</div>
-		        	<div class="showcase-icon"><a href="#modal-cursor" class="call-modal">
-		        		<img src="images/CursorStudio.jpg" width="96px" height="96px">
-		        		<div class="caption">CursorStudio</div></a>
-		        	</div>
-		        	<div class="showcase-icon no-right"><a href="#modal-doprep" class="call-modal">
-		        		<img src="images/DoPrepare.jpg" width="96px" height="96px">
-		        		<div class="caption">DoPrepare</div></a>
-		        	</div>
-		        	<div class="showcase-icon top-adj"><a href="#modal-gotcouch" class="call-modal">
-		        		<img src="images/GotCouch.jpg" width="96px" height="96px">
-		        		<div class="caption">GotCouch</div></a>
-		        	</div>
-		        	<div class="showcase-icon top-adj"><a href="#modal-indizza" class="call-modal">
-		        		<img src="images/Indizza.jpg" width="96px" height="96px">
-		        		<div class="caption">Indizza</div></a>
-		        	</div>
-		        	<div class="showcase-icon top-adj"><a href="#modal-univ" class="call-modal">
-		        		<img src="images/univissues.jpg" width="96px" height="96px">
-		        		<div class="caption">UnivIssues</div></a>
-		        	</div>
-
-		        	<!-- Modals Follow -->
-
-		        	<section class="semantic-content" id="modal-bio" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-inner">
-							<img src="images/bioOpps.jpg">
+					</a>
+				</div>
+				<div class="col-md-4 project-item">
+					<a href="https://uxdesign.cc/designing-voice-activated-learning-management-systems-a-ux-case-study-644b5fd12392" target="_blank">
+						<div class="project-inner two">
+							<img class="img" src="img/whiteboard1.png" alt="" style="zoom: 0.5">
+							<h3>Whiteboard</h3>
+							<div class="project-desc">Alexa skill UX for a Learning Management System.</div>
 						</div>
-						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
-					</section>
-
-					<section class="semantic-content" id="modal-cursor" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-inner">
-							<img src="images/CursorStudio.jpg">
+					</a>
+				</div>
+				<div class="col-md-4 project-item">
+					<a href="https://medium.com/@Gautam_Krishnan/building-the-ux-of-our-internal-testing-tool-1566984cb5cc" target="_blank">
+						<div class="project-inner three">
+							<img class="img" src="img/art1.png" alt="" style="zoom: 0.5">
+							<h3>ART</h3>
+							<div class="project-desc">A hybrid desktop application at Vitech for running internal regression tests.</div>
 						</div>
-						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
-					</section>
-
-					<section class="semantic-content" id="modal-doprep" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-inner">
-							<img src="images/DoPrepare.jpg">
+					</a>
+				</div>
+				<div class="col-md-4 project-item">
+					<a href="https://gautamkrishnan.com/projects/hurricanes/" target="_blank">
+						<div class="project-inner four">
+							<img class="img" src="img/shadows2.png" alt="" style="zoom: 0.5">
+							<h3>Shadows in the Rain</h3>
+							<div class="project-desc">Plot and playback hurricanes on a map.</div>
 						</div>
-						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
-					</section>
-
-					<section class="semantic-content" id="modal-gotcouch" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-inner">
-							<img src="images/GotCouch.jpg">
+					</a>
+				</div>
+				<div class="col-md-4 project-item">
+					<a href="https://devpost.com/software/compare-conquer" target="_blank">
+						<div class="project-inner five">
+							<img class="img" src="img/compare1.png" alt="" style="zoom: 0.5">
+							<h3>Compare and Conquer</h3>
+							<div class="project-desc">A 3D holographic exhibit for Chicago's Peggy Notebaert Museum.</div>
 						</div>
-						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
-					</section>		
-
-					<section class="semantic-content" id="modal-indizza" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-inner">
-							<img src="images/Indizza.jpg">
+					</a>
+				</div>
+				<div class="col-md-4 project-item">
+					<a href="https://gautamkrishnan.com/projects/fund-analytics-manager" target="_blank">
+						<div class="project-inner six">
+							<img class="img" src="img/perfanalytics.png" alt="" style="zoom: 0.5">
+							<h3>Fund Analytics Manager</h3>
+							<div class="project-desc">Data visualization and modeling for fund managers in a Vitech SaaS application.</div>
 						</div>
-						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
-					</section>			
-
-					<section class="semantic-content" id="modal-univ" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-inner">
-							<img src="images/univissues.jpg">
-						</div>
-						<a href="#!" class="modal-close" title="Close this modal" data-dismiss="modal">&times;</a>
-					</section>					
-		        </div>
-		    </div>
-		    
-		</div>
-		
-		<div id="labs">
-			<div class="container">
-				<div class="labs-container">
-			    	<div class="labs-section">
-			        	<h2>Labs</h2>
-			            <p>Here's a collection of my experiments with web technologies. Some of them work only on modern Webkit based browsers (Like Google Chrome and Safari).</p>
-			        </div>
-			  		<div class="labs-showcase">
-			  			<div class="showcase-icon showcase-icon-labs">
-			  				<a href="labs/Peacock/index.html" target="_blank"><img src="images/peacock.jpg">
-			  				<div class="caption-labs">The CSS3 Peacock (Only modern webkit).</div></a>
-			  			</div>
-			  			<div class="showcase-icon showcase-icon-labs">
-			  				<a href="labs/Bat/index.html" target="_blank"><img src="images/bat.jpg">
-			  				<div class="caption-labs">The Bat, in pure HTML SVG Graphics.</div></a>
-			  			</div>
-			  			<div class="showcase-icon showcase-icon-labs">
-			  				<a href="labs/Parrot/index.html" target="_blank"><img src="images/parrot.jpg">
-			  				<div class="caption-labs">The CSS3 Parrot.</div></a>
-			  			</div>
-			  			<div class="showcase-icon showcase-icon-labs">
-			  				<a href="labs/Stamp/index.html" target="_blank"><img src="images/stamp.jpg">
-			  				<div class="caption-labs">An Indian Postage Stamp, made in CSS3.</div></a>
-			  			</div>
-			  			<div class="showcase-icon showcase-icon-labs">
-			  				<a href="labs/Disc/index.html" target="_blank"><img src="images/disc.jpg">
-			  				<div class="caption-labs">A rotating gramaphone disc (Only Webkit).</div></a>
-			  			</div>
-			  		</div>
-		  		</div>
-		    </div>
-		</div>
-		
-		<div id="about">
-			<div class="container">
-				<div class="about-section">
-				    <h2>About Me</h2>
-				    <p class="small">Hacker, Designer, Philatelist, avid Philotherian and a Proud Indian.</p>
-				    <p>
-				    	I am 21, based in Chennai, India. I have over three years of experience in designing and developing applications for web and mobile. I have pursued internships at Zoho Corporation (Dec'12 - Feb'13) and at National Informatics Centre, Govt. of India (June'12 - Dec'12). I love working on open source technologies. My skills include expertise on C, C++, Java, J2ME, HTML, CSS, Javascript, PhoneGap (Apache Cordova), XML, PHP and MySQL. I have also worked on QML, QtC++, Ruby on Rails, VB, XAML and C#.
-				    </p>
-			    </div>
-			    <div class="about-connect">
-			    	<div class="social-section">
-			    		Connect with me, or just say Hi!
-			    		<div class="social-icons">
-			    			<a href="http://www.facebook.com/gkthegr8" target="_blank"><img src="images/social/facebook.png" class="icon"></a>
-			    			<a href="http://www.twitter.com/gkthegr8" target="_blank"><img src="images/social/twitter.png" class="icon"></a>
-			    			<a href="mailto:gkthegr8@gmail.com?Subject=Hi,%20I%20just%20dropped%20by%20your%20website!" target="_blank"><img src="images/social/email.png" class="icon"></a>
-			    			<a href="https://plus.google.com/104701877866714557541/" target="_blank"><img src="images/social/google-plus.png" class="icon"></a>
-			    			<a href="http://in.linkedin.com/pub/gautam-krishnan/1a/521/7bb/" target="_blank"><img src="images/social/linkedin.png" class="icon"></a>
-			    			<a href="http://www.quora.com/Gautam-Krishnan" target="_blank"><img src="images/social/quora.png" class="icon"></a>
-			    			<a href="https://foursquare.com/gkthegr8" target="_blank"><img src="images/social/foursquare.png" class="icon"></a>
-			    			<a href="http://www.slideshare.net/gkrocks/" target="_blank"><img src="images/social/slideshare.png" class="icon"></a>
-			    			<a href="http://stackoverflow.com/users/1468857/gautam-krishnan" target="_blank"><img src="images/social/stackoverflow.png" class="icon"></a>
-			    			<a href="https://github.com/gkthegr8" target="_blank"><img src="images/social/github.png" class="icon"></a>
-			    		</div>
-			    	</div>
-			    </div>
+					</a>
+				</div>
 			</div>
 		</div>
-		<!-- <div id="contact">
-			<div class="container">
-				
+	</div>
+	<div id="writing" class="writing">
+		<div class="container">
+			<div class="row">
+				<div class="title-container">
+					<div class="section-title">WRITING</div>
+				</div>
 			</div>
-		</div> -->
-		<script src="js/modal.js"></script>
-		<script type="text/javascript" src="js/responsive.js"></script>
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			<div class="row writing-container">
+				<div class="col-md-4 writing-item">
+					<a href="https://uxdesign.cc/the-purpose-of-ux-you-dont-know-what-you-don-t-know-6a94c0d30023" target="_blank">
+						<div class="writing-inner">
+							<img class="img" src="img/writing1.png" alt="">
+							<h3>The purpose of UX: you don’t know what you don’t know</h3>
+							<div class="medium-link">Read on Medium<i class="material-icons">open_in_new</i></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 writing-item">
+					<a href="https://medium.com/the-ux-of-life/ux-review-enabling-twitter-mobile-notifications-42465ecc1976" target="_blank">
+						<div class="writing-inner">
+							<img class="img" src="img/writing2.png" alt="">
+							<h3>UX Review: Enabling Twitter mobile notifications</h3>
+							<div class="medium-link">Read on Medium<i class="material-icons">open_in_new</i></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 writing-item">
+					<a href="https://medium.com/the-ux-of-life/ux-review-googles-2-step-login-fa43e1474815" target="_blank">
+						<div class="writing-inner">
+							<img class="img" src="img/writing3.png" alt="">
+							<h3>UX Review: Google’s 2 step login</h3>
+							<div class="medium-link">Read on Medium<i class="material-icons">open_in_new</i></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 writing-item">
+					<a href="https://medium.com/the-ux-of-life/ux-review-skype-for-business-2489dc91b3fa" target="_blank">
+						<div class="writing-inner">
+							<img class="img" src="img/writing4.png" alt="">
+							<h3>UX Review: Skype for Business</h3>
+							<div class="medium-link">Read on Medium<i class="material-icons">open_in_new</i></div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
-		  ga('create', 'UA-41597298-1', 'gautamkrishnan.com');
-		  ga('send', 'pageview');
+	<div id="about" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="title-container">
+					<div class="section-title">ABOUT</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<!-- I design clean and polished visual aesthetic for web, desktop and mobile apps. I've been involved in a product cycle from conception to release. With strong written and oral communication skills, and with a strong background rooted in design, engineering and programming, I collaborate effectively with cross-functional teams. Along with advanced HTML, CSS and JavaScript skills, I possess first hand knowledge of user-centered design principles, and UX design practices and methodologies. -->
+					I am currently based in Chennai, India. I was previously with Vitech in the US, where I made insurance administration software less boring.
+					<br><br>Travel and photography are my hobbies. I contribute my photos to <a href="https://unsplash.com/@gautamkrishnan/collections" target="_blank">Unsplash</a> where they are available for free commercial use for everyone.</div>
+				<div class="col-md-6 text-center">
+					<!-- <div class="about-text">Skill set: UX, UI, Visual and Product Design. Sketch, Principle, Adobe Photoshop, Illustrator, Balsamiq, Invision, Axure. <br><br> HTML5, CSS3, LESS, JavaScript, jQuery, D3.JS, PhoneGap, Android Development, PHP, MySQL, C, C++, Java, Node.js, Python.</div> -->
+					<div class="social-section">
+						<div class="social-icons">
+							<a href="https://www.twitter.com/gkthegr8" target="_blank"><img src="temp/twitter.svg" class="icon"></a>
+							<a href="https://medium.com/@Gautam_Krishnan" target="_blank"><img src="temp/medium.svg" class="icon"></a>
+							<a href="https://www.instagram.com/gautamkrishnan" target="_blank"><img src="temp/instagram.svg" class="icon"></a>
+							<a href="https://in.linkedin.com/pub/gautam-krishnan/1a/521/7bb/" target="_blank"><img src="temp/linkedin.svg" class="icon"></a>
+							<a href="https://dribbble.com/gautamkrishnan" target="_blank"><img src="temp/dribbble.svg" class="icon"></a>
+							<a href="mailto:gautamkrishnan91@gmail.com?Subject=Hi,%20I%20just%20dropped%20by%20your%20website!" target="_blank"><img src="temp/email.svg" class="icon"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.typist.js" type="text/javascript"></script>
+	<script src="js/ui.js" type="text/javascript"></script>
 
-		</script>
-		<script src="js/foundation.min.js"></script>
-</body></html>
+	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+
+	<script>
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+	</script>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+	</script>
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+					location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 2
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-41597298-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>

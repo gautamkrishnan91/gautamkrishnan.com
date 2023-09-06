@@ -1,0 +1,46 @@
+[{
+  "name" : "The Boss Ladies",
+  "players" : [ "Kathy", "Christine", "Deepali", "Bharti" ],
+  "data" : [
+    [ null, 21  , null, 21   ],
+    [ 3   , null, 21  , 13   ],
+    [ null, 10  , null, 10   ],
+    [ 17  , 21  , 21  , null ]
+  ]
+}, {
+  "name" : "The Muzungus",
+  "players" : [ "Matt", "Wire", "MJ", "Caesar" ],
+  "data" : [
+    [ null, null, 15  , 21   ],
+    [ null, null, null, null ],
+    [ 21  , null, null, 21   ],
+    [ 17  , null, 17  , null ]
+  ]
+}, {
+  "name" : "Love All League",
+  "players" : [ "Naval", "Batman", "Nishant", "Akash" ],
+  "data" : [
+    [ null, 16  , 21  , 21   ],
+    [ 21  , null, 21  , 21   ],
+    [ 17  , 14  , null, null ],
+    [ 18  , 20  , null, null ]
+  ]
+}, {
+  "name" : "Divisible by 5",
+  "players" : [ "Argha", "Faris", "RK", "RDX" ],
+  "data" : [
+    [ null, 21  , 21  , 16   ],
+    [ 16  , null, 21  , 19   ],
+    [ 16  , 13  , null, 18   ],
+    [ 21  , 21  , 21  , null ]
+  ]
+}, {
+  "name" : "The Losers' League",
+  "players" : [ "Champee", "Vivek", "Akshay", "Prasanna" ],
+  "data" : [
+    [ null, 21  , 21  , 12   ],
+    [ 11  , null, 16  , 20   ],
+    [ 15  , 21  , null, 20   ],
+    [ 21  , 21  , 21  , null ]
+  ]
+}]

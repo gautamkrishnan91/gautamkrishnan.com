@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="noun_36804_cc" sketch:type="MSLayerGroup" fill="#000000">
+            <g id="Group" sketch:type="MSShapeGroup">
+                <path d="M48.494,24.363 L32.404,18.869 L38.533,10.323 L29.988,16.451 L24.494,0.363 L19,16.451 L10.454,10.323 L16.583,18.869 L0.494,24.363 L16.583,29.857 L10.454,38.403 L19,32.274 L24.494,48.363 L29.989,32.274 L38.534,38.403 L32.405,29.857 L48.494,24.363 L48.494,24.363 Z M24.494,28.323 C22.307,28.323 20.534,26.551 20.534,24.363 C20.534,22.175 22.307,20.403 24.494,20.403 C26.682,20.403 28.453,22.175 28.453,24.363 C28.453,26.551 26.682,28.323 24.494,28.323 L24.494,28.323 Z" id="Shape"></path>
+                <circle id="Oval" cx="24.493" cy="24.363" r="2.042"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

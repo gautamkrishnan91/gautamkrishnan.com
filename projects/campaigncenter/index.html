@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Gautam Krishnan's Website and Portfolio">
+	<meta name="author" content="Gautam Krishnan">
+	<title>Gautam Krishnan's Website and Portfolio</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/simple-lightbox.min.css" />
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/gallery-wrapper.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+	<script src="js/less.js" type="text/javascript"></script>
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+			<div class="rg-image-nav">
+				<a href="#" class="rg-image-nav-prev">Previous Image</a>
+				<a href="#" class="rg-image-nav-next">Next Image</a>
+			</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+
+		</div>
+	</script>
+</head>
+
+<body>
+	<a id="menu-toggle" href="#" class="btn btn-default btn-lg toggle"><i class="fa fa-bars"></i></a>
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+			<li class="sidebar-brand"><a href="#">Gautam Krishnan</a></li>
+			<li><a href="#top">Home</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#writing">Writing</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="https://www.gautamkrishnan.com/Gautam_Krishnan_Resume.pdf" target="_blank">Resume</a></li>
+			<li><a href="http://www.gautamkrishnan.com/blog/" target="_blank">Blog</a></li>
+		</ul>
+	</div>
+	<div class="top-bar">
+		<div class="logo"></div>
+		<ul class="menu">
+			<!-- <li><a href="https://www.gautamkrishnan.com/Gautam_Krishnan_Resume.pdf" target="_blank">Resume<i class="material-icons">open_in_new</i></a></li>
+			<li><a href="#about" id="abouttab">About</a></li>
+			<li><a href="#writing" id="writingtab">Writing</a></li>
+			<li><a href="#work" id="worktab">Work</a></li> -->
+			<li><a href="/" id="toptab">Home</a></li>
+		</ul>
+	</div>
+	<div class="project-header">
+		<div class="container">
+			<h1 class="project-name">Campaign Center</h1>
+			<p class="project-tagline">Creation and management of insurance campaigns in a Vitech SaaS application.</p>
+			<div class="hero-image"><img src="images/hero.png"></div>
+			<p class="image-desc">An overview of the application showing an existing active campaign.</p>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Project Brief</h2>
+			<p class="project-brief-text">Campaign Center is a product at Vitech that enables our customers in the insurance industry to launch targeted campaigns to achieve goals like enrollment, upselling insurance products, and more.</p>
+		</div>
+		<div class="project-desc-right">
+			<div class="row">
+				<div class="project-right-half">
+					<h3>Type and Timeline</h3>
+					<p>Product Design, UX, and Data Visualization.<br>January - August 2021.</p>
+				</div>
+				<div class="project-right-half">
+					<h3>Team</h3>
+					<p>Product Managers: Hayden Jarboe, Ciara O'Riordan, and Mahbubul Haque. UX Team: Emm Pakdee (Director of UX), Gautam Krishnan, and Yujie Zhu (Sr. UX Designers). Engineering (Framework) Team.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="project-right-half">
+					<h3>Tools</h3>
+					<p>Figma Design, FigJam, InVision, Balsamiq Mockups, and React.js.</p>
+				</div>
+				<div class="project-right-half">
+					<h3>My Role</h3>
+					<p>Ideation, Research, Prototyping, Visual Design, and User Testing.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Background</h2>
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Overview</h3>
+				<p>Vitech broadly serves three industrial verticals - Insurance, Investments, and Retirement. For the clients in our insurance segment, their entire claims processing happens on Vitech's platform. They currently need to export their user data from our platform and import it into other third-party campaign builders. With their data living in the Vitech platform, the product team identified that we could empower our customers to maximize their revenue and engagement by building a campaign feature right into the platform.</p>
+			</div>
+			<div class="project-desc-section">
+				<h3>Introduction to the Platform</h3>
+				<p>Vitech's next-generation React platform is a robust framework that serves as a base for all our new self-service apps. We use React Material under the hood that is modified to serve Vitech's Design System components.</p>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container no-bottom-margin">
+		<div class="project-desc-left">
+			<h2>Planning</h2>
+			<!-- <p class="project-brief-text">We started by conducting interviews with the faculty and research students at EVL. We interviewed them for two different things: Their expertise with SAGE2 and familiarity with hurricane-related terminologies.</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Objectives</h3>
+				<ol>
+					<li>To identify and prioritize use cases to validate the opportunities for the team to focus on.</li>
+					<li>To learn about business requirements, user needs, and technology capabilities/constraints.</li>
+					<li>Conducting competitive research, gathering inspiration, and exploring a visual design that sets up our customers for success.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Supporting Data</h3>
+				<p>We have a mix of qualitative data from SMEs, direct customer requests, as well as feedback from a lot of product demos. They have, at times, shown to be leading indicators for market needs. To note specific examples:</p>
+				<ol>
+					<li>Demo requests for MetLife for regulatory pain points related to notifying members of their available benefits. It was noted internally by Robin and Rich (Pension Risk Transfer SMEs) that this pain point was common across the pension and retirement industry. MetLife has also contracted Vitech on an HLD to investigate using Vitech as their campaign provider.</li>
+					<li>Functional requirements in projects for our client Massachusetts Teachers Retirement System (MTRS state insurance) for a “campaign-like” functionality for alerting members that they are past their open enrollment window.</li>
+					<li>Demo request from NYC Board of Education Retirement System (BERS) for campaignlike functionality to increase enrollment in their pension plans.</li>
+					<li>Our internal investments SMEs have noted that Vitech is missing a tool that helps with outreach for fundraising for both closed and open funds. SME said that several clients have asked if we possessed such a tool in the past, but we turned them down.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="project-desc-container container no-top-margin">
+		<div class="hero-image"><img src="images/plan.jpg"></div> 
+	</div>
+	<div class="project-desc-container container no-top-margin no-flex">
+		<div class="hero-image"><img src="images/bangbuck.jpg"></div> 
+		<p class="image-desc">Bang/buck exercise to identify the value and cost of tasks.</p>
+	</div> -->
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Research Phase: Competitor Research</h2>
+			<p>We looked at various SaaS campaign builders and were inspired by Hive, Monday.com and Airtable.</p>
+		</div>
+		<div class="insights-gallery">
+			<a href="images/hive1.png"><img src="images/hive1.png" alt="" title="Hive - Calendar View"/></a>
+			<a href="images/hive2.png"><img src="images/hive2.png" alt="" title="Hive - Kanban View"/></a>
+			<a href="images/monday1.png"><img src="images/monday1.png" alt="" title="Monday.com - Campaigns"/></a>
+			<a href="images/monday2.png"><img src="images/monday2.png" alt="" title="Monday.com - Campaigns Dashboard"/></a>
+			<a href="images/monday3.png"><img src="images/monday3.png" alt="" title="Monday.com - Campaigns Timeline"/></a>
+			<a href="images/airtable1.png"><img src="images/airtable1.png" alt="" title="Airtable - Kanban View"/></a>
+			<a href="images/airtable2.png"><img src="images/airtable2.png" alt="" title="Airtable - Calendar View"/></a>
+			<a href="images/airtable3.png"><img src="images/airtable3.png" alt="" title="Airtable - Pipelines"/></a>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Research Phase: Defining Success</h2>
+			<!-- <p class="project-brief-text">We started by conducting interviews with the faculty and research students at EVL. We interviewed them for two different things: Their expertise with SAGE2 and familiarity with hurricane-related terminologies.</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Measures of Success</h3>
+				<p>We will consider the product to be a success when:</p>
+				<ol>
+					<li>We have proven usage by our customers to be equal to or higher than their current usage of third-party campaign builders.</li>
+					<li>We have proven that 80% count of customers have run campaigns.</li>
+					<li>Metrics to be further refined for early adopters and for when the product is generally available for all customers.</li>
+					<li>We've gotten positive feedback (qual data) from user interviews confirming that we've solved the problem, for example: When we have helped MetLife with their compliance needs or helped MTRS reduce their number of unenrolled members.</li>
+				</ol>
+				<p>Our customers' business processes are manual labor intensive (like claim adjudication, claim adjustments, etc.) and require multiple activities. Each of these activities can require its result conditions which result in subprocesses. Our greatest opportunity and success would be to automate and manage these processes which in turn (the hypothesis) can help our clients support their larger goals.</p>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Research Phase: User Discovery Insights and Story Mapping</h2>
+			<p>After interviewing our customers' employees who work on creating campaigns, we were able to further define the requirements and create epics to work on. We broke it down as follows:</p>
+		</div>
+		<div class="insights-gallery">
+			<a href="images/homepage.png"><img src="images/homepage.png" alt="" title=""/></a>
+			<a href="images/new-campaign-setup.png"><img src="images/new-campaign-setup.png" alt="" title=""/></a>
+			<a href="images/outcome-rules.png"><img src="images/outcome-rules.png" alt="" title=""/></a>
+			<a href="images/actcampaign.png"><img src="images/actcampaign.png" alt="" title=""/></a>
+			<a href="images/actmanagement1.png"><img src="images/actmanagement1.png" alt="" title=""/></a>
+			<a href="images/actmanagement2.png"><img src="images/actmanagement2.png" alt="" title=""/></a>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>User Testing Script + Tasks</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<p class="project-brief-text italics">"Pay attention to what users do, not what they say."</p>
+			<p class="quote">- Jakob Nielsen</p>
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Introduction</h3>
+				<blockquote>Before we drop in, I want to remind you will be walking through a clickable prototype rather than actual software. This means we have simulated some functionalities and not others. If you click somewhere and something doesn't happen or if you clicked somewhere and multiple things happen, it doesn't mean you clicked in the wrong spot, it just means that we didn't simulate that portion. If you get stuck, we want to hear your thought process as to why you are stuck, I may step in to nudge you in a direction if we need to move on to other sections of the design.</blockquote>
+				<blockquote>I am going to give you some background on your user role and the area of the Campaign Center tool we are in then give you a series of tasks to perform. Please remember to think out loud as much as possible so we can get insight into how you perceive the tool and the design concept. If you are ready, let's go ahead and get started.</blockquote>
+				<blockquote>From our last user testing session, we went through and set up the backbone of a campaign. Now let's take it a step further, you have gone through and created the campaign and several outbound activities (emails, messages, letters) associated with the campaign. You are going to be a user for one of our pension funds, your goal is to navigate around and perform several actions on the inflight campaign.</blockquote>
+			</div>
+			<div class="project-desc-section">
+				<h3>Questions to ask</h3>
+				<p><b>Here are the tasks you need to execute to accomplish this goal:</b></p>
+				<ol>
+					<li>What are your first impressions of this page? What information are you seeing here?</li>
+					<li>We will start on our Active Campaign Dashboard > Summary tab. How would you change your view on the summary statistics from being counts to percentages?
+						<ul class="no-margin">
+							<li>Is the data displayed here relevant to you as a user?</li>
+						</ul>
+					</li>
+					<li>Please find where you would set up your outbound emails/letters/messages.</li>
+					<li>How would you filter this Activities list to only display the Future activities to send out?
+						<ul class="no-margin">
+							<li>Is the data for outbound touchpoints here sufficient to understand what is being sent out, to whom, and when?</li>
+							<li>Please click All to back out of the View drop-down.</li>
+						</ul>
+					</li>
+					<li>Please find where you would view the full list of people targeted by this campaign.</li>
+					<li>How would you view a subset of the Audience that is 'Converted' and age 65 or over?</li>
+					<li>If the audience segment that you want is not already available, where would you go to create a new audience segment?
+						<ul class="no-margin">
+							<li>[Let them know that nothing here is currently automated] But looking at this list of filters how would you create an audience segment of people aged 30-40, who are in a "Potential" status, and who are missing an email address?</li>
+							<li>Where would you go to name that audience segment?</li>
+						</ul>
+					</li>
+					<li>Let's say you need to perform a quick Audit on your interactions with people in the campaign. For example, the ones who converted on August 18th. How would you get the data to do that audit?</li>
+					<li>[Have them navigate back to the summary tab] Let's say you finished all the activities you wanted to accomplish on the current campaign, how would you navigate to another existing campaign?</li>
+					<li>What if you do not see the campaign you want to work on immediately displayed, what are the different ways you can find the campaign you need to work on?</li>
+					<li>What if you only wanted to see customer campaigns, how would you do that?</li>
+					<li>Now what if you change your mind, how would go back to viewing our current campaign in the full screen?</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Follow up</h3>
+				<blockquote>Great, we're finished with the bulk of the test. You mentioned [something they said out loud perhaps?] earlier and I didn't want to jump in at that time. Can you say more about that?</blockquote>
+				<blockquote>On a scale of 1-7, how would you rate the experience of using the design?</blockquote>
+				<blockquote>What are 3 adjectives that come to mind when thinking about your experience with the design?</blockquote>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Ideation Phase: Wireframes</h2>
+			<p>We worked on several wireframes individually, reviewed and voted our work, and finalized on the following items:</p>
+		</div>
+		<div class="insights-gallery">
+			<a href="images/wire1.png"><img src="images/wire1.png" alt="" title=""/></a>
+			<a href="images/wire2.png"><img src="images/wire2.png" alt="" title=""/></a>
+			<a href="images/wire4.png"><img src="images/wire4.png" alt="" title=""/></a>
+			<a href="images/wire5.png"><img src="images/wire5.png" alt="" title=""/></a>
+			<a href="images/wire3.png"><img src="images/wire3.png" alt="" title=""/></a>
+		</div>
+	</div>
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Ideation Phase: Low-Fidelity Mockups</h2>
+			<p>To test our ideas with users and other stakeholders, we worked on a few low-fi mockups to validate the direction and feasibility within the current engineering framework.</p>
+		</div>
+		<div class="insights-gallery">
+			<a href="images/wip1.png"><img src="images/wip1.png" alt="" title=""/></a>
+			<a href="images/wip2.png"><img src="images/wip2.png" alt="" title=""/></a>
+			<a href="images/wip3.png"><img src="images/wip3.png" alt="" title=""/></a>
+			<a href="images/wip4.png"><img src="images/wip4.png" alt="" title=""/></a>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Usability Testing - High Level Findings</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<p class="project-brief-text italics">"If you think good design is expensive, you should look at the cost of bad design."</p>
+			<p class="quote">- Ralf Speth, CEO, Jaguar Land Rover</p>
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Research Methods</h3>
+				<ol>
+					<li>Remote (in-situation) usability testing was conducted on a convenience sample of 5 test participants (2 internal and 3 external) from 08/01/2021 - 08/15/2021.</li>
+					<li>Participants were shown the Create the Campaign clickable prototype and instructed to perform an aforementioned task and provide feedback on their experience interacting with the UX design concept/clickable prototype and potential features via the think-aloud method.</li>
+					<li>Sessions lasted approximately 30+ minutes and were recorded via MS Teams with both video and audio.</li>
+					<li>Following data collection, a content analysis was performed by watching recorded test sessions to extract user feedback in aggregate and identify overarching themes.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Overall Experience (Active Campaign Concept)</h3>
+				<img src="images/exp1.png" width="100%">
+			</div>
+			<div class="project-desc-section">
+				<h3>Overall Experience (Create Campaign Concept)</h3>
+				<img src="images/exp2.png" width="100%">
+			</div>
+			<div class="project-desc-section">
+				<h3>Test Participants</h3>
+				<img src="images/participants.png" width="100%">
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Usability Testing - Findings Summary</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<p class="project-brief-text">We were able to validate a lot of our hypotheses and understood where we fell short.</p>
+			<!-- <p class="quote">- Jakob Nielsen</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Create Campaign Concept</h3>
+				<ol>
+					<li>All 5 test participants successfully completed the task flow of creating the campaign as the first time user of the app's UX concept, from the initial screen with the text copy and the CTA button being contextually clear, to setting up the campaign name, start/end date of the campaign, specify the goal of the campaign, selecting appropriate target type, then choosing relevant target group, and performing additional interval settings, then clearly understand the information that's being displayed on the review & confirm screen.</li>
+					<li>2/5 test participants didn't realize that they should scroll vertically downward to be able to select the target type perhaps due to the vertical whitespace between the sections on Step 1 screen.</li>
+					<li>All 5 participants successfully completed the task of choosing the target group(s) on Step 2 screen.</li>
+					<li>2/5 participants were not aware they could change the frequency value on Step 2 screen. This may have been more to do with prepopulating fields on the prototype and less with the prototype itself.</li>
+					<li>2/5 participants were not aware that the CTA button 'Edit' on the 'Review and Confirm' screen would change the page they were on.</li>
+					<li>2/5 participants did not use the 'Return to Confirm' CTA button on page 1 to skip to the Confirm screen.</li>
+					<li>All participants successfully clicked the pencil icon to change the name.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Active Campaign Concept</h3>
+				<ol>
+					<li>All 5 test participants successfully completed tasks on the 'Summary' tab. Bulk of testers wanted the default to be the 'Percentage' view of summary stats and see more information related to data trends.</li>
+					<li>3 of 5 participants successfully completed tasks on the 'Activities' tab. Number of participants found the name of the tab to not resonate with a term they would use for managing outbound correspondence.</li>
+					<li>2 of 5 participants successfully searched for existing audience segments on the 'Audience' tab and 3 of 5 were not able to navigate to the segment creator on the first attempt.</li>
+					<li>All 5 test participants successfully navigated to and interacted with the Campaigns ribbon for navigating between campaigns.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered no-bottom-margin">
+		<div class="project-desc-left">
+			<h2>Usability Testing - Insights and Recommendations for an Active Campaign</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+		</div>
+	</div>
+	<div class="project-desc-container container no-top-margin no-flex">
+		<div class="hero-image"><img src="images/trafficlight1.png"></div> 
+		<p class="image-desc">Traffic Light Report Summary of Tasks Performed by Test Participants via UX Design Concept.</p>
+	</div>
+	<div class="project-desc-container container no-top-margin">
+		<div class="project-desc-left">
+			<h2>Detailed Insights for Active Campaign</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<!-- <p class="project-brief-text italics">"Pay attention to what users do, not what they say."</p>
+			<p class="quote">- Jakob Nielsen</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Summary Tab Learnings</h3>
+				<ol>
+					<li>5/5 test participants were immediately clear on how to change the data type for the summary statistics for the campaign.</li>
+					<li>5/5 test participants were immediately clear on what information the summary tab was presenting.
+						<blockquote>Conversions is what stands out to me.</blockquote>
+						<blockquote>Looks like a results dashboard.</blockquote>
+					</li>
+					<li>2/5 test participants recognized the link between the conversion stats and the campaign status summary.</li>
+					<li>3/5 test participants mentioned wanting to be able to see trends in their conversion data over time.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Summary Tab Recommendations</h3>
+				<ol>
+					<li>Default the view of the Summary Statistics to be in terms of Percentage.</li>
+					<li>No need to differentiate between 'Pending' and 'Contacted'.</li>
+					<li>Embed the ability to view trendlines in conversions or un-subscription rates.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Activities Tab Learnings</h3>
+				<ol>
+					<li>3/5 participants understood to navigate to the 'Activities' tab when asked to go view the outbound correspondence.
+						<blockquote>'Edit' would make me think that I could use this to customize the dashboard setup, add/drop widgets etc. Edit the reporting not the campaign - P5 (External Test Participant)</blockquote>
+					</li>
+					<li>When being prompted to view only future activities, 5/5 participants correctly clicked on “Pending” in the 'View' drop down.
+						<blockquote>I would assume I am looking at everything and I bet there will be a Pending option in the drop down - P1 (Internal Test Participant).</blockquote>
+					</li>
+					<li>3/5 thought sufficient information was displayed on each of the outbound activities to know what was being sent, when, and to whom.
+						<blockquote>Only thing that is missing as a column is letter, email, what I am sending - P2 (Internal Test Participant)</blockquote>
+					</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Activities Tab Recommendations</h3>
+				<ol>
+					<li>There were lexicon issues with the name of the 'Activities' tab. Needs to sound more actionable like "____ Manager", Correspondence, Tactics or Outbound would be good to use.</li>
+					<li>Surface the channel for the outbound correspondence (Letter/Email/Text/etc).</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Population Tab Learnings</h3>
+				<ol>
+					<li>5/5 participants knew to navigate to 'Population' tab to view the list of people in the campaign.</li>
+					<li>When prompted to view a pre-created population segment,3/5 participants selected the 'View' drop down to select the segment. With additional prompting and knowing that filters was used to create a population segment 4/5 test participants selected 'View' drop down to select a segment.
+						<blockquote>It looks like there is somewhere that I could create this filter - P4 (Internal Test Participant)</blockquote>
+					</li>
+					<li>2/5 participants knew to navigate to the Filters action when prompted to create a new population segment.</li>
+					<li>5/5 participants knew how to use the filters provided to create a new population segment.</li>
+					<li>3/5 participants knew how to get the appropriate data to perform a person level audit.
+						<blockquote>I would hope that I could drill in from here to see more details. P1 - (Internal Test Participant)</blockquote>
+					</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Population Tab Recommendations</h3>
+				<ol>
+					<li>Rename 'View' to 'View Segment'</li>
+					<li>'Filters' as a name for a section did not resonate with several users and it doesn't sound like you can create a view under 'Filters'. Need a better term for Filters like 'Segment Creator'.</li>
+					<li>History export needs to be in Excel format.</li>
+					<li>User testers didn't tie the ability to click the checkbox on the row of the Population page to the ability to export.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered no-bottom-margin">
+		<div class="project-desc-left">
+			<h2>Usability Testing - Insights and Recommendations for Creating a New Campaign</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+		</div>
+	</div>
+	<div class="project-desc-container container no-top-margin no-flex">
+		<div class="hero-image"><img src="images/trafficlight2.png"></div> 
+		<p class="image-desc">Traffic Light Report Summary of Tasks Performed by Test Participants via UX Design Concept.</p>
+	</div>
+	<div class="project-desc-container container no-top-margin">
+		<div class="project-desc-left">
+			<h2>Detailed Insights for Creating a New Campaign</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<!-- <p class="project-brief-text italics">"Pay attention to what users do, not what they say."</p>
+			<p class="quote">- Jakob Nielsen</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Wizard Step 1 Learnings</h3>
+				<ol>
+					<li>5/5 test participants were immediately clear on how to name the campaign and were able to follow on to selecting the target type. Participants were able to understand which Audience Type corresponds with Customers. 
+						<blockquote>When test moderator prompted participant to choose who would be included in the campaign: “I would scroll down (the page) and I would choose the Customers.” - P1 (Internal Test Participant)</blockquote>
+						<blockquote>Text field for the goal is the most broadly applicable - P3 (External Test Participant</blockquote>
+					</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Wizard Step 1 Recommendations</h3>
+				<ol>
+					<li>Consider reducing the vertical whitespace between the 2 sections on Step 1 screen so that certain portion of 2nd section (i.e. Section heading) will be visible above the fold.</li>
+					<li>Retain the goal field in its current state</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Wizard Step 2 Learnings</h3>
+				<ol>
+					<li>5/5 participants understood that the Target Groups were predetermined lists of people and understood that this would add people to the campaign.
+						<blockquote>You were explaining that this is a campaign around getting people to fill out their paper works for their pension benefits, so I clicked on Members approaching retirement age. - P2 (Internal Test Participant)</blockquote>
+						<blockquote>Worth looking at ESPs around the word Group because it sounds fixed - P3 (External Test Participant)</blockquote>
+						<blockquote>Looking at this, it looks like some different queries of people - P1 (Internal test Participant)</blockquote>
+					</li>
+					<li>When being prompted that the amount of people you want to include in this campaign might change, how would the test participant manage that through this design concept, 5/5 participants correctly clicked on “Yes” radio button in order to perform additional settings, including the frequency interval for the campaign.
+						<blockquote>I would click 'Yes' so that I can add more recipients. - P1 (Internal Test Participant)</blockquote>
+					</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Wizard Step 2 Recommendations</h3>
+				<ol>
+					<li>Drop down options for frequency should include intervals like Weekly/Monthly/Quarterly.</li>
+					<li>Potentially Change Target Group to something more easily understood as a preset query that pulls people based on them matching a predefined set of criteria.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Review & Confirm Screen Learnings</h3>
+				<ol>
+					<li>5/5 participants valued the importance of reviewing what information is being displayed on the Review & Confirm screen for reassurance.</li>
+					<li>5/5 participants were immediately clear that they can edit the name of the campaign by clicking on the pencil icon located next to the campaign name. There was some confusion around whether the pencil applied to the whole page or just the Name. 2 seemed to think by clicking on CTA 'Edit' text button that's available for Step 1 and Step 2, they would be able to edit things inline right on the Review & Confirm screen rather than being taken to that particular step to edit their form fields/selection that were made.
+						<blockquote>I think I can click on this because its blue - P4 (External Test Participant)</blockquote>
+						<blockquote>Placement of the pencil ties specifically to the name of the campaign - P1 (Internal Test Participant)</blockquote>
+						<blockquote>I would think, if I click edit here it would take me back to step 1 so I can make changes as necessary - P5 (External Test Participant)</blockquote>
+					</li>
+					<li>3/5 participants thought to use the 'Go To Review and Confirm' screen after jumping back to page 1 to do edits.</li>
+					</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Review & Confirm Screen Recommendations</h3>
+				<ol>
+					<li>Keep 'Edit' action as a hop to the previous pages.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Dashboard/Active Campaign Detail View Screen Learnings</h3>
+				<ol>
+					<li>5/5 participants expected to see details related to their campaign lifecycle including data visualizations and exports, activity calendar, activity content, participant list, etc.
+						<blockquote>This should have things that are easy for people to pull for their bosses - P3 (External Test Participant)</blockquote>
+					</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Dashboard/Active Campaign Detail View Screen Recommendations</h3>
+				<ol>
+					<li>Ensure that prototype for Active campaign view and activity view include the following: Data visualizations/digestible statistics, Activity Calendar, Activity Content, Activity performance, Target Responses, and Target Lists.</li>
+					<li>Ensure that the active campaign view shows the data that was just created during the campaign creation workflow</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Detailed High Fidelity Design</h2>
+			<p>We looked at various SaaS campaign builders and were inspired by Hive, Monday.com and Airtable.</p>
+		</div>
+		<div class="insights-gallery">
+			<a href="images/1.1 Summary -  view.png"><img src="images/1.1 Summary -  view.png" alt="" title=""/></a>
+			<a href="images/1.2 Summary - numeric view.png"><img src="images/1.2 Summary - numeric view.png" alt="" title=""/></a>
+			<a href="images/2.1 Correspondence Manager.png"><img src="images/2.1 Correspondence Manager.png" alt="" title=""/></a>
+			<a href="images/2.2 Correspondence Manager - view by status.png"><img src="images/2.2 Correspondence Manager - view by status.png" alt="" title=""/></a>
+			<a href="images/3.1 Audience.png"><img src="images/3.1 Audience.png" alt="" title=""/></a>
+			<a href="images/3.2 Audience - view segment.png"><img src="images/3.2 Audience - view segment.png" alt="" title=""/></a>
+			<a href="images/3.3 Audience - view selected segment.png"><img src="images/3.3 Audience - view selected segment.png" alt="" title=""/></a>
+			<a href="images/3.4 Audience - filters.png"><img src="images/3.4 Audience - filters.png" alt="" title=""/></a>
+			<a href="images/4.1 Ribbon - all.png"><img src="images/4.1 Ribbon - all.png" alt="" title=""/></a>
+			<a href="images/4.3 Ribbon - customers.png"><img src="images/4.3 Ribbon - customers.png" alt="" title=""/></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.typist.js" type="text/javascript"></script>
+	<script src="js/ui.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+	<script src="js/simple-lightbox.min.js" type="text/javascript"></script>
+	<script>
+		var lightbox = new SimpleLightbox('.insights-gallery a', { /* options */ });
+	</script>
+	<script>
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+	</script>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+	</script>
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+					location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 2
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-41597298-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>

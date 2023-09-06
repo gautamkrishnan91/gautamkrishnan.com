@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Gautam Krishnan's Website and Portfolio">
+	<meta name="author" content="Gautam Krishnan">
+	<title>Gautam Krishnan's Website and Portfolio</title>
+	<link href="css/reset.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+	<script src="js/less.js" type="text/javascript"></script>
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/gallery-wrapper.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastislide.css" />
+
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+	
+	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
+		<div class="rg-image-wrapper">
+			{{if itemsCount > 1}}
+			<div class="rg-image-nav">
+				<a href="#" class="rg-image-nav-prev">Previous Image</a>
+				<a href="#" class="rg-image-nav-next">Next Image</a>
+			</div>
+			{{/if}}
+			<div class="rg-image"></div>
+			<div class="rg-loading"></div>
+
+		</div>
+	</script>
+</head>
+
+<body>
+	<a id="menu-toggle" href="#" class="btn btn-default btn-lg toggle"><i class="fa fa-bars"></i></a>
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			<a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+			<li class="sidebar-brand"><a href="#">Gautam Krishnan</a></li>
+			<li><a href="/">Home</a></li>
+			<!-- <li><a href="#work">Work</a></li>
+			<li><a href="#writing">Writing</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="https://www.gautamkrishnan.com/Gautam_Krishnan_Resume.pdf" target="_blank">Resume</a></li>
+			<li><a href="http://www.gautamkrishnan.com/blog/" target="_blank">Blog</a></li> -->
+		</ul>
+	</div>
+	<div class="top-bar">
+		<div class="logo"></div>
+		<ul class="menu">
+			<!-- <li><a href="https://www.gautamkrishnan.com/Gautam_Krishnan_Resume.pdf" target="_blank">Resume<i class="material-icons">open_in_new</i></a></li>
+			<li><a href="#about" id="abouttab">About</a></li>
+			<li><a href="#writing" id="writingtab">Writing</a></li>
+			<li><a href="#work" id="worktab">Work</a></li> -->
+			<li><a href="/">Home</a></li>
+		</ul>
+	</div>
+	<div class="project-header">
+		<div class="container">
+			<h1 class="project-name">Shadows in the Rain</h1>
+			<p class="project-tagline">An application that visualizes hurricanes from 1800 to 2010.</p>
+			<div class="hero-image"><img src="images/hurricanes.jpg"></div>
+			<p class="image-desc">An overview of the application showing the plotted hurricanes and their corresponding graphs.</p>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Project Brief</h2>
+			<p class="project-brief-text">Shadows in the Rain was our course project for CS-424 Visualization and Visual Analytics at the University of Illinois at Chicago. This course was offered by the Electronic Visualization Laboratory (EVL). EVL also offers other cross courses between the School of Computer Science and the School of Design at UIC.</p>
+		</div>
+		<div class="project-desc-right">
+			<div class="row">
+				<div class="project-right-half">
+					<h3>Type and Timeline</h3>
+					<p>Product Design, UX, and Data Visualization.<br>September-October 2015.</p>
+				</div>
+				<div class="project-right-half">
+					<h3>Team</h3>
+					<p>Gautam Krishnan, <a href="https://www.linkedin.com/in/srivatsan-muralidharan-9394905b/" target="_blank">Srivatsan Muralidharan</a>, <a href="https://www.linkedin.com/in/sumanthpandugula/">Sumanth Pandugula</a>, and <a href="https://www.linkedin.com/in/vivek-krishnakumar/" target="_blank">Vivek Krishnakumar</a>, under the guidance of <a href="https://www.evl.uic.edu/people/10">Prof. Andrew E Johnson</a>.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="project-right-half">
+					<h3>Type and Timeline</h3>
+					<p>Product Design, UX, and Data Visualization<br>September-October 2015.</p>
+				</div>
+				<div class="project-right-half">
+					<h3>My Role</h3>
+					<p>Ideation, User Research, Prototyping, Visual Design, User Testing, and  Front-end UI Code.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Background</h2>
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Overview</h3>
+				<p>Shadows in the Rain is a web application to analyze the regions in the US  most likely to be affected by hurricanes. It plots and plays back hurricanes from the 1800s to 2010 in the Atlantic and Pacific oceans on a map, showing the intensity, damage, and their real-time progress.</p>
+			</div>
+			<div class="project-desc-section">
+				<h3>Introduction to the Platform</h3>
+				<p>The EVL boasts a state-of-the-art multitouch display known as the SAGE2. It has an astounding resolution of 8160 x 2304 pixels and comprises 18 individual displays (in a 6x3 layout). This large screen is built to facilitate collaboration and group-oriented problem-solving. The teams for this course project were expected to present their application on this screen in a full-screen mode, scaled appropriately.</p>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container no-bottom-margin">
+		<div class="project-desc-left">
+			<h2>Planning</h2>
+			<!-- <p class="project-brief-text">We started by conducting interviews with the faculty and research students at EVL. We interviewed them for two different things: Their expertise with SAGE2 and familiarity with hurricane-related terminologies.</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Duration</h3>
+				<p>We had eight weeks to complete and present our project, so we decided that the best way to achieve our goal was to plan each activity with a deadline. There were some unknown unknowns, like the data quality and what/how to clean up 200K+ rows of data. <p>
+			</div>
+			<div class="project-desc-section">
+				<h3>Task Allocation</h3>
+				<p>We had to plan tasks according to our backgrounds and strengths. Srivatsan and Sumanth were the most experienced with handling data and databases, while Vivek was into writing front-end JavaScript. My expertise is in conducting UX activities and building UI, so we all had our parts cut out from the beginning as we built the team.</p>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container no-top-margin">
+		<div class="hero-image"><img src="images/plan.jpg"></div> 
+	</div>
+	<div class="project-desc-container container no-top-margin no-flex">
+		<div class="hero-image"><img src="images/bangbuck.jpg"></div> 
+		<p class="image-desc">Bang/buck exercise to identify the value and cost of tasks.</p>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Research Phase: Understanding the Target Audience</h2>
+			<p class="project-brief-text">We started by conducting interviews with the faculty and research students at EVL. We interviewed them for two different things: Their expertise with SAGE2 and familiarity with hurricane-related terminologies.</p>
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>SAGE2 Expertise</h3>
+				<p>We tried to understand how well our audience knew about SAGE2 and its capabilities, as it would be used by our audience to interact with our application. We found that three different types of audiences exist:<p>
+				<ol>
+					<li>EVL Researchers and Faculty: These users know the capabilities of SAGE2 and are aware of all the interactions that it supports. They also consisted of people involved in the inception and creation of SAGE2.</li>
+					<li>EVL Students: These users had either taken a course offered by the EVL or know about SAGE2's multitouch capabilities and use it like any other touch device.</li>
+					<li>Novice Users: These users may use the typical keyboard and mouse input methods that the SAGE2 supports, like a general desktop computer.</li>
+				</ol>
+				<p>Our goal was to consider all these user groups and build an interface that would offer a complete and uncompromised experience for all.</p>
+			</div>
+			<div class="project-desc-section">
+				<h3>Familiarity with hurricane-related terminologies</h3>
+				<p>UIC offers a BS, MS, and Ph.D. in Earth and Environmental Sciences (EES) under the College of Liberal Arts and Sciences. The courses are designed to train the students in interdisciplinary earth science, laboratory investigations, and computational modeling and simulation of big data. Since we were working on a project that was closely related to EES, we had the opportunity to interview a few students from that discipline.</p>
+				<p>While our team was getting familiar with all the hurricane-related terminologies in our project, we found that the students from an EES background had no problem understanding them. We saw them as our power users who could understand the application at a conceptual level. They could answer a lot of our questions on the factors and parameters that affected the hurricanes, and how the factors themselves were interdependent. </p>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Research Phase: User Discovery Insights</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+		</div>
+		<div class="project-desc-right">
+			<p>About 90% (19/21) of the users had not used the multitouch feature on SAGE2. Some described as being aware of the capability but did not have the opportunity to use it. </p>
+			<blockquote>I remember reading about it on the EVL website but haven't come across any app that supports it. In fact, you can't tell which app supports multitouch and which doesn't.</blockquote>
+			<blockquote>Have seen a demo in the course I took but never used it.</blockquote>
+			<blockquote>I generally avoid the touch feature because it involves being too close to the giant screen almost my height, which makes content hard to read.</blockquote>
+			<p>About 75% (16/21) of the users reported that they were unfamiliar with any tool to analyze weather-related data. Although some EES students had used the <a href="https://www.nhc.noaa.gov/" target="_blank">forecasting tool by National Hurricane Center (NHC)</a>. they could not recollect if the NHC tool offered any means to analyze past hurricane data. We were introduced to this tool by the EES students and some aspects of it were useful to us in understanding hurricane representations. </p>
+		</div>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Research Phase: Understanding the Problem</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<p class="project-brief-text italics">"Confusion and clutter are failures of design, not attributes of information. And so the point is to find design strategies that reveal detail and complexity - rather than to fault the data for an excess of complication. Or, worse, to fault viewers for a lack of understanding."</p>
+			<p class="quote">- Edward Tufte</p>
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>The Data</h3>
+				<p>The datasets provided to us were a list of hurricanes and their related parameters from both the Atlantic and Pacific oceans (about 100,000 rows of data). As a team, we were tasked with creating a web application to help users analyze historical data.</p>
+			</div>
+			<div class="project-desc-section">
+				<h3>The Opportunity</h3>
+				<p>Due to climate change and increasing global sea levels, we are witnessing an increase in hurricanes every year and the damage caused. In this project, we analyzed and built a model to show how geographical locations have been increasingly affected in the past years. We can use this data to predict the areas most vulnerable to hurricanes in the future.</p>
+				<br>
+				<p>How this is currently done:</p>
+				<ol>
+					<li>Using commercial software in weather stations and the media.</li>
+					<li>Weather apps like weather.com, Accuweather, etc., provide some historical data on hurricanes, but they lack the controls to slice and dice data.</li>
+					<li>Static maps available on the web sometimes paint an incomplete picture or even show exaggerated data.</li>
+				</ol>
+				<p>After collecting feedback and gaining a better understanding of the problem, we developed a value proposition about the necessity and direction for our app. </p>
+				<br>
+				<blockquote>Shadows in the Rain is a tool that lets users study the effects of past hurricanes to make better predictions about the extent and areas of damage they could cause in the future.</blockquote>
+				<br>
+				<p><b>Our product helps</b></p>
+				<ul class="no-margin"><li>Researchers and students who are studying hurricanes.</li></ul>
+				<p><b>Who need a better way to</b></p>
+				<ul class="no-margin"><li>Analyze past hurricane data to make future predictions.</li></ul>
+				<p><b>By</b></p>
+				<ul class="no-margin">
+					<li>Letting them slice and dice the data and visualize hurricanes on a map.</li>
+					<li>Playing hurricanes on the map according to their original course and the areas they affected.</li>
+				</ul>
+				<p><b>And is better than</b></p>
+				<ul class="no-margin">
+					<li>Using static images issued by the National Weather Service.</li>
+					<li>Historical data by weather applications.</li>
+				</ul>
+				<p><b>Because</b></p>
+				<ul class="no-margin">
+					<li>Users can select and compare hurricanes and the extent of damage they caused.</li>
+					<li>Use map controls to pan, zoom, and change map layers to analyze affected areas meticulously.</li>
+					<li>Filter and classify hurricanes by factors like wind speed and pressure, time of the year, whether they made landfall or not, etc.</li>
+				</ul>
+			</div>
+			<div class="project-desc-section">
+				<h3>Specific Requirements</h3>
+				<p>There were a few course-specific requirements that our application had to fulfill:</p>
+				<ol>
+					<li>View and sort hurricanes chronologically, alphabetically, and by maximum wind speed.</li>
+					<li>Ability to pick a particular hurricane, or a hurricane season and play it on the map with controls to pause and resume playback as if in real-time, and allow the user to change the rate at which time passes.</li>
+					<li>While playing the hurricane, it should show the wind speed, pressure, and the damage caused overlaid on the hurricane itself. The timeline of the hurricane through its various stages should be shown to the user (tropical depression, cyclone categories, and hurricane). The user should be able to pan, zoom, and reset the view of the map.</li>
+					<li>To emphasize the effects of climate change, the app must provide overview graphs showing the number of hurricanes per year from 2005 to the present.</li>
+					<li>Provide a heatmap of which areas are most likely to be affected by hurricanes based on the overall data.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Ideation Phase: Design Challenge</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Simplicity</h3>
+				<p>How can we make the app intuitive for all audiences, particularly the <br>EVL and EES students?</p>
+			</div>
+			<div class="project-desc-section">
+				<h3>Product, not project</h3>
+				<p>Although this was a part of our course, how can we make our solution more<br>like a finished, polished product and less like a school project?</p>
+			</div>
+			<div class="project-desc-section">
+				<h3>Accessibility</h3>
+				<p>Since the SAGE2 platform supports both touch and keyboard/mouse interfaces,<br>how do we make our interface accessible for both these modes?</p>
+			</div>
+		</div>
+	</div>
+	<div class="project-desc-container container centered">
+		<div class="project-desc-left">
+			<h2>Ideation Phase: User Journey</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+			<div class="hero-image"><img src="images/userjourney.png"></div> 
+		</div>
+	</div>
+	<div class="project-desc-container container centered no-bottom-margin">
+		<div class="project-desc-left">
+			<h2>Prototyping Phase: Wireframes and Mockups</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+		</div>
+	</div>
+	<div class="project-desc-container container no-top-margin no-flex">
+		<div class="hero-image"><img src="images/WF1.png"></div> 
+		<p class="image-desc">Our initial lo-fi wireframe.</p>
+		<div class="hero-image"><img src="images/WF2.png"></div> 
+		<p class="image-desc">We simulated this wireframe on the SAGE2 display and found that certain areas of the application were not accessible for the touch-screen users.</p>
+		<div class="hero-image"><img src="images/WF3.png"></div> 
+		<p class="image-desc">Finalized wireframe after addressing the issues we found.</p>
+	</div>
+	<div class="project-desc-container container centered no-bottom-margin">
+		<div class="project-desc-left">
+			<h2>Final Deliverable</h2>
+			<!-- <p class="project-brief-text">To understand the motivation, preferences, and goals of our users, I created a survey to gain some qualitative insight. It was extremely helpful in understanding our audience's experience and what they thought about our idea.</p> -->
+		</div>
+	</div>
+	<div class="project-desc-container container no-flex">
+		<iframe width="100%" height="500" src="https://www.youtube.com/embed/b-qnzFJrcAw" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="project-desc-container container">
+		<div class="project-desc-left">
+			<h2>Retrospection</h2>
+			<!-- <p class="project-brief-text">We started by conducting interviews with the faculty and research students at EVL. We interviewed them for two different things: Their expertise with SAGE2 and familiarity with hurricane-related terminologies.</p> -->
+		</div>
+		<div class="project-desc-right">
+			<div class="project-desc-section">
+				<h3>Key Findings</h3>
+				<ol>
+					<li>The radii of damage caused by the hurricanes at each position is as large as an enitre city.</li>
+					<li>Most hurricanes never make landfall.</li>
+					<li>Many hurricanes start as a tropical depression and continue to gain intensity. Towards the end, the lose their intensity and end again as a tropical depression.</li>
+					<li>The extent of 34knot wind speed radii is more than the extent of 64 knots wind speed radii. This was observed when the quadrophinic data was plotted onto the map.</li>
+					<li>It is generally possible to predict the route a hurricane might take, but the outliers often cause catastrophic damage to life and property.</li>
+				</ol>
+			</div>
+			<div class="project-desc-section">
+				<h3>Future Scope</h3>
+				<p>After testing our application with the users and upon viewing the projects that were presented by other teams in class, we had a lot of take aways. Here are some items that would be our priority in the future and would enrich the features that we already have:</p>
+				<ol>
+					<li>Show the current wind speed and compare it with the max wind speed of a particular hurricane at each point.</li>
+					<li>Represent the wind speed (currently in knots) in other units that are user friendly (like kms and miles per hour).</li>
+					<li>Show if the hurricane was in Atlantic or Pacific (in the info box below).</li>
+					<li>Allow the user to jump to a particular hurricane in the hurricane list box by providing a search box on the top. This search box should accept hurricane names, years and so on.</li>
+					<li>The hurricane seasons (currently mentioned as only Atlantic or Pacific seasons) must also show the months when they are active.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.typist.js" type="text/javascript"></script>
+	<script src="js/ui.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
+
+	<script>
+		$("#menu-close").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+	</script>
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#sidebar-wrapper").toggleClass("active");
+		});
+	</script>
+	<script>
+		$(function() {
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') ||
+					location.hostname == this.hostname) {
+
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 2
+						}, 1000);
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-41597298-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>
